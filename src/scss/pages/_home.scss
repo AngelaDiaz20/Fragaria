@@ -1,3 +1,18 @@
+.banner_container{
+    position: relative;
+    
+    .button_banner{
+        position: absolute;
+        bottom: 18%;
+        left: 18%;
+    }
+    
+    .banner{
+    width: 100%;
+    margin: 0;
+    }
+}
+
 .summary{
     display: flex;
 
@@ -47,9 +62,8 @@
         height: 50px;
         width: 500px;
         position: absolute;
-        bottom: 80px;
+        bottom: 1000px;
         left: 0;
-        z-index: -1;
     }
 
     h1{
