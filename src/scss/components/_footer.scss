@@ -1,0 +1,45 @@
+footer{
+    background: $purple-dark;
+    padding: 40px 40px 20px;
+    position: relative;
+    margin-top: 100px;
+    color: white;
+    font-family: $title-font;
+
+    img{
+        width: 100px;
+    }
+
+    .made{
+        border-top: 1px solid white;
+        padding-top:5px;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .icon_media{
+        font-size: 25px;
+        margin: 0 10px;
+    }
+
+    .custom-shape-divider-top-1671653195 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+    
+    .custom-shape-divider-top-1671653195 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 39px;
+    }
+    
+    .custom-shape-divider-top-1671653195 .shape-fill {
+        fill: #FFFFFF;
+    }
+}
+
