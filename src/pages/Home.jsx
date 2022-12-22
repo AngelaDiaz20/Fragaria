@@ -7,11 +7,12 @@ import Product4 from '../assets/img/products/product_4.jpg'
 
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import Button from '../components/Button'
 
 function Home() {
     return (
         <div>
-            <Navbar />
+            <Navbar/>
             <main>
                 <section className='summary'>
                     <img src={Store} alt="Imagen de tienda" />
@@ -35,6 +36,7 @@ function Home() {
                         <img src={Product3} alt="" />
                         <img src={Product4} alt="" />
                     </article>
+                    <Button text="Ver catálogo" className="button"/>
                 </section>
             </main>
             <Footer />
