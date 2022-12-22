@@ -1,7 +1,13 @@
+@import './variables';
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    font-family: $paragraph-font;
 }
 
 a{
@@ -9,3 +15,8 @@ a{
     color: white;
 }
 
+h1{
+    color: $title-color;
+    font-family: $title-font;
+    font-weight: 900;
+}
