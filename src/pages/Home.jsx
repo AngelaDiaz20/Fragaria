@@ -17,7 +17,7 @@ function Home() {
             <main>
                 <div className='banner_container'>
                     <img src={Banner} alt="Banner" className='banner'/>
-                    <Button text="Ir a la tienda" class="button_banner"/>
+                    <Button text="Ir a la tienda" classe="button_banner"/>
                 </div>
                 <section className='summary'>
                     <img src={Store} alt="Imagen de tienda" />
@@ -41,7 +41,7 @@ function Home() {
                         <img src={Product3} alt="" />
                         <img src={Product4} alt="" />
                     </article>
-                    <Button text="Ver catálogo" className="button"/>
+                    <Button text="Ver catálogo" classe="button"/>
                 </section>
             </main>
             <Footer />

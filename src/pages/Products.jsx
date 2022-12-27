@@ -1,6 +1,5 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import Button from '../components/Button'
 import Category from '../components/Category';
 import CardProduct from '../components/CardProduct';
 

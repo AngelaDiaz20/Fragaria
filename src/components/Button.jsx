@@ -2,7 +2,7 @@ import {FaShopify} from 'react-icons/fa'
 
 function Button(props) {
     return (
-        <button className={`button ${(props.class)}`}>
+        <button className={`button ${(props.classe)}`}>
             <FaShopify className='icon'/> {props.text}
         </button>
     );

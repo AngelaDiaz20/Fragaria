@@ -1,5 +1,7 @@
 .banner_container{
     position: relative;
+    margin-bottom: -7px;
+    padding: 0;
     
     .button_banner{
         position: absolute;
@@ -16,8 +18,11 @@
 .summary{
     display: flex;
 
-    img{
+    img:first-child{
         height: 90vh;
+        z-index: 1;
+        margin: 0;
+        padding: 0;
     }
 
     .description{
@@ -54,15 +59,16 @@
     margin-top: -100px;
     background: url('../../assets/img/bg-products.png') center/contain $black;
     padding: 100px 50px;
+    position: relative;
 
     &:before{
-        content: "";
+        content:"";
         background:$black;
-        z-index: 5;
+        z-index: -1;
         height: 50px;
         width: 500px;
         position: absolute;
-        bottom: 1000px;
+        top: -50px;
         left: 0;
     }
 
