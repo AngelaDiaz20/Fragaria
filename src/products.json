@@ -1,0 +1,45 @@
+[
+    {
+        "name": "Fresas con chocolate",
+        "price": 38000,
+        "category" : "fresas", 
+        "image": "https://detallesolemio.co/wp-content/uploads/2021/09/fresas-con-chocolates-rosadas.jpeg",
+        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum corrupti eligendi, facilis, nesciunt officia debitis provident soluta culpa minus aliquam labore veniam magnam nostrum, accusantium hic voluptas. Obcaecati, a quos."
+    },
+    {
+        "name": "Fresas con",
+        "price": 8000,
+        "category" : "agenda",
+        "image": "https://mimosperu.com/images/productos/_BOX-LOVELY.jpg",
+        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum corrupti eligendi, facilis, nesciunt officia debitis provident soluta culpa minus aliquam labore veniam magnam nostrum, accusantium hic voluptas. Obcaecati, a quos."
+    },
+    {
+        "name": "Fresas",
+        "price": 3000,
+        "category" : "fresas", 
+        "image": "https://detallesolemio.co/wp-content/uploads/2021/09/fresas-con-chocolates-rosadas.jpeg",
+        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum corrupti eligendi, facilis, nesciunt officia debitis provident soluta culpa minus aliquam labore veniam magnam nostrum, accusantium hic voluptas. Obcaecati, a quos."
+    },
+    {
+        "name": "Fresas",
+        "price": 3000,
+        "category" : "fresas", 
+        "image": "https://www.adoomicilio.com/img/tiendas/265/1/11845.jpg",
+        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum corrupti eligendi, facilis, nesciunt officia debitis provident soluta culpa minus aliquam labore veniam magnam nostrum, accusantium hic voluptas. Obcaecati, a quos."
+    },
+    {
+        "name": "Fresas",
+        "price": 3000,
+        "category" : "fresas", 
+        "image": "https://detallesolemio.co/wp-content/uploads/2021/09/fresas-con-chocolates-rosadas.jpeg",
+        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum corrupti eligendi, facilis, nesciunt officia debitis provident soluta culpa minus aliquam labore veniam magnam nostrum, accusantium hic voluptas. Obcaecati, a quos."
+    },
+    {
+        "name": "Fresas",
+        "price": 3000,
+        "category" : "fresas", 
+        "image": "https://detallesolemio.co/wp-content/uploads/2021/09/fresas-con-chocolates-rosadas.jpeg",
+        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum corrupti eligendi, facilis, nesciunt officia debitis provident soluta culpa minus aliquam labore veniam magnam nostrum, accusantium hic voluptas. Obcaecati, a quos."
+
+    }
+]

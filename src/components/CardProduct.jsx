@@ -1,12 +1,12 @@
 import Button from "./Button";
 
-function CardProduct(props) {
+function CardProduct({name, price, image}) {
     return (
         <div className="card_product">
-            <img src={props.image} alt={props.name}/>
-            <h2>{props.name}</h2>
-            <p>{props.price}</p>
-            <Button text="Agregar"/>
+            <img src={image} alt={name}/>
+            <h2>{name}</h2>
+            <p>{price}</p>
+            <Button text="Agregar" classe="button_product"/>
         </div>
     );
 }

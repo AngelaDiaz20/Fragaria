@@ -38,7 +38,10 @@ footer{
     }
     
     .custom-shape-divider-top-1671653195 .shape-fill {
-        fill: $black;
+        fill: white;
     }
 }
 
+.fill-black .custom-shape-divider-top-1671653195 .shape-fill{
+    fill: $black;
+}

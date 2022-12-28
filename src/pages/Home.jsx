@@ -44,7 +44,7 @@ function Home() {
                     <Button text="Ver catálogo" classe="button"/>
                 </section>
             </main>
-            <Footer />
+            <Footer class="fill-black"/>
         </div>
     );
 }

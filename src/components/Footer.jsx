@@ -1,9 +1,9 @@
 import Brand from '../assets/img/fragaria_brand_footer.svg'
 import { FaFacebookSquare, FaInstagram } from 'react-icons/fa';
 
-function Footer() {
+function Footer(props) {
     return (
-        <footer>
+        <footer className={`${(props.class)}`}>
             <img src={Brand} alt="Logo de Fragaria" />
             <div className="custom-shape-divider-top-1671653195">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

@@ -5,6 +5,7 @@ import CardProduct from '../components/CardProduct';
 
 import Product from '../assets/img/products/product_3.jpg'
 import { FaSearch } from 'react-icons/fa'
+import data from '../products.json'
 
 function Products() {
     return (
@@ -20,10 +21,21 @@ function Products() {
                             type='text'
                             id='search'
                         />
-                        <FaSearch className='search_icon' />
+                        <FaSearch className='search_icon'/>
                     </div>
                 </div>
-                <CardProduct name="Producto" price="$ 1000" image={Product} />
+                    <section className='products_cards'>
+                    {data.map(product => 
+                        <CardProduct
+                            key={product.name}
+                            name={product.name}
+                            price={product.price}
+                            image={product.image}
+                        />
+                    )}
+                    </section>
+
+                {/* <CardProduct name="Producto" price="$ 1000" image={Product} /> */}
             </main>
             <Footer />
         </>
