@@ -15,6 +15,15 @@ function DetailsProducts() {
                     </div>
                     <FormProduct/>
                 </article>
+                <article>
+                    <div className="separator">
+                        Detalles
+                    </div>
+                    <div className="separator">
+                        Descripción
+                    </div>
+
+                </article>
             </main>
             <Footer/>
         </>

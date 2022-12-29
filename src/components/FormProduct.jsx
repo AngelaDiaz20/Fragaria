@@ -47,7 +47,7 @@ function FormProduct() {
                         </div>
                         <div className="form-group">
                             <label htmlFor="dates">Fecha de entrega</label>
-                            <input type="date" name="dates" id="dates"/>
+                            <input type="date" name="dates" id="dates" min=""/>
                         </div>
                         <p>*Ten presente que debe realizarse el pedido al menos con un día (24h) de anticipación</p>
                         {/* <button type="submit" className="button button_form">Enviar</button> */}
