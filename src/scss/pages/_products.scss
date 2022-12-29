@@ -1,8 +1,12 @@
 .container_products{
-    // background: #f6ecff;
+    // background:url('../../assets/img/bg-products.png');
 
     .categories{
         display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        width: 90%;
+        margin: 30px auto 0;
     }
 
     .search{
@@ -26,7 +30,7 @@
     .search_icon{
         position: absolute;
         right: 8px;
-        top: 12px;
+        top: 12px; 
         color: #8a8a8a;
     }
 
@@ -53,11 +57,8 @@
     .container_products{
     
         .products_cards{
-            display: grid;
             grid-template-columns: repeat(3, 1fr);
             width: 90%;
-            padding: 20px 0;
-            margin: auto;
         }
     }
 }
@@ -66,12 +67,9 @@
     .container_products{
     
         .products_cards{
-            display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 5px;
             width: 80%;
-            padding: 20px 0;
-            margin: auto;
         }
     }
 }

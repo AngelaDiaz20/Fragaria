@@ -1,0 +1,24 @@
+.container_detail{
+    background:url('../../assets/img/bg-products.png') #FEFDFF;
+
+    article{
+        margin: 20px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .container_image{
+            width: 90%;
+            max-width: 350px;
+            height: 400px;
+            background-color: beige;
+            margin: auto;
+        }
+
+        .detail_image{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+}

@@ -2,6 +2,8 @@ import Button from "./Button";
 import { RiSearchEyeLine } from 'react-icons/ri'
 
 function CardProduct({name, price, image}) {
+    var precio = price.toLocaleString("en")
+    
     return (
         <div className="card_product">
             <div>
@@ -11,7 +13,7 @@ function CardProduct({name, price, image}) {
                 </div>
             </div>
             <h2>{name}</h2>
-            <p>{price}</p>
+            <p>{precio}</p>
             <Button text="Agregar" classe="button_product"/>
         </div>
     );

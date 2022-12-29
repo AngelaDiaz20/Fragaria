@@ -22,14 +22,14 @@ function Products() {
                             id='search'
                         />
                         <FaSearch className='search_icon'/>
-                    </div>
+                    </div> 
                 </div>
                     <section className='products_cards'>
                     {data.map(product => 
                         <CardProduct
                             key={product.name}
                             name={product.name}
-                            price={product.price}
+                            price={`$ ${product.price}`}
                             image={product.image}
                         />
                     )}
