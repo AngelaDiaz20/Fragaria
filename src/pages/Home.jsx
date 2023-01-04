@@ -8,7 +8,7 @@ import Product3 from '../assets/img/products/product_3.jpg'
 import Product4 from '../assets/img/products/product_4.jpg'
 import Banner from '../assets/img/banner.png'
 
-import Button from '../components/Button'
+import Button from '../components/common/Button'
 
 const Home = () => {
   return (

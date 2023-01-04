@@ -9,7 +9,7 @@ import "../../../styles/Carts.css";
 
 // Import components
 import CartItem from "./CartItem";
-import { cartUIActions } from "../../../store/shopping-cart/cartUISlice";
+import { cartUIActions } from "../../../store/shoppingCart/cartUISlice";
 import { priceFormat } from "../../../App";
 
 const Carts = () => {

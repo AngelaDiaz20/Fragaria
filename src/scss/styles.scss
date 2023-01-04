@@ -1,22 +1,37 @@
 
-//Settings
+// ====================================
+//             Variables
+// ====================================
 @import './base/base';
 
-//Variables
+// ====================================
+//             Variables
+// ====================================
 @import './base/variables';
 
-//Components
-@import './components/navbar';
-@import './components/footer';
-@import './components/button';
-@import './components/category';
-@import './components/productCard';
-@import './components/formProduct';
-@import './components/pagination';
-@import './components/modal';
-@import './components/itemCart';
+// ====================================
+//             Components
+// ====================================
 
-//Pages
+//----layouts----
+@import './components/layouts/header';
+@import './components/layouts/footer';
+
+//----common----
+@import './components/common/button';
+@import './components/common/category';
+@import './components/common/formProduct';
+@import './components/common/modal';
+@import './components/common/pagination';
+@import './components/common/productCard';
+
+@import './components/common/cart/itemCart';
+@import './components/common/cart/tableRow';
+
+// ====================================
+//             Pages
+// ====================================
 @import './pages/home';
 @import './pages/products';
-@import './pages/detailsProduct';
+@import './pages/productDetail';
+@import './pages/cart';

@@ -10,7 +10,7 @@ import "../styles/Cart.css";
 
 // Import Components
 import TableRow from "../components/UI/Table/TableRow";
-import { ItemCart } from "../components/cart/ItemCart";
+import { ItemCart } from "../components/common/cart/ItemCart";
 import { priceFormat } from "../App";
 
 const Cart = () => {

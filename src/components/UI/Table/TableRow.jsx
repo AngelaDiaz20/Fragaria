@@ -6,7 +6,7 @@ import { useDispatch } from "react-redux";
 import "../../../styles/Cart.css";
 
 // Import Components
-import { cartActions } from "../../../store/shopping-cart/cartSlice";
+import { cartActions } from "../../../store/shoppingCart/cartSlice";
 import { priceFormat } from "../../../App";
 
 const TableRow = (props) => {

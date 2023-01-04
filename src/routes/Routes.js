@@ -2,8 +2,8 @@ import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 
 import Home from "../pages/Home";
-import AllProducts from "../pages/AllProducts";
-import ProductDetails from "../pages/ProductDetails";
+import AllProducts from "../pages/Products";
+import ProductDetails from "../pages/ProductDetail";
 import Cart from "../pages/Cart";
 
 const Routers = () => {

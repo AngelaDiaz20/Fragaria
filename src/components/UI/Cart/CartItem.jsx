@@ -7,7 +7,7 @@ import { ListGroupItem } from "reactstrap";
 import "../../../styles/CartItem.css";
 
 // Import components
-import { cartActions } from "../../../store/shopping-cart/cartSlice";
+import { cartActions } from "../../../store/shoppingCart/cartSlice";
 import { priceFormat } from "../../../App";
 
 const CartItem = ({ item }) => {
