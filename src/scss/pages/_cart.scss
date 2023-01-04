@@ -1,0 +1,88 @@
+.container_items{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 50px 100px;
+
+    .table_cart{
+        background: #ac25c14d;
+        border: 1px solid #C971D7;
+        border-radius: 10px;
+        padding: 20px;
+        backdrop-filter: blur(2px);
+
+        h2{
+            text-align: center;
+            margin: 10px 0 20px;
+            font-weight: 800;
+            font-size: 24px;
+        }
+
+        table{
+            width: 100%;
+            text-align: center;
+    
+            thead{
+                th{
+                    padding: 10px 0;
+                }
+            }
+    
+            tr{
+                border-bottom: 1px solid black;
+            }
+            td{
+                padding: 10px 0;
+            }
+            .product_name{
+                text-align: left;
+                padding-left: 15px;
+            }
+    
+            tfoot {
+                th{
+                border-bottom: none;
+                padding: 15px 0;
+                font-size: 30px;
+                font-weight: 400;
+                }
+                tr{
+                    border-bottom: none;
+                }
+            }
+    
+        }
+    
+        .button_whatsapp{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0 0;
+            
+            .button{
+                background: black;
+                width: 70%;
+                border: none;
+                margin: auto;
+                color: #fff;
+                cursor: pointer;
+                display: inline-block;
+                font-weight: 700;
+                letter-spacing: 0.05em;
+    
+                &:hover{
+                    width: 68%;
+                    transition-duration: 200ms;
+                }
+            }
+            p{
+                font-size: 13px;
+            }
+            span{
+                color: rgb(144, 4, 4);
+            }
+        }
+    }
+
+    
+}

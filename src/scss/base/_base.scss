@@ -6,8 +6,15 @@
     box-sizing: border-box;
 }
 
+html{
+    position: relative;
+    min-height: 100%;
+}
+
 body{
     font-family: $paragraph-font;
+    margin-bottom: 253px;
+    background: url('../../assets/img/bg-products.png') center/contain;
 }
 
 a{

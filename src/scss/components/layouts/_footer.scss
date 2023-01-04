@@ -4,6 +4,9 @@ footer{
     position: relative;
     color: white;
     font-family: $title-font;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 
     img{
         width: 100px;

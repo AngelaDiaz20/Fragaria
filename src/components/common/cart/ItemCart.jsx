@@ -9,7 +9,7 @@ import {HiMinus, HiPlus, HiTrash} from 'react-icons/hi'
 export const ItemCart = (props) => {
 
     // Props of the products added to the cart
-    const { id, image, name, price, quantity, totalPrice } = props.item;
+    const { id, image, name, price, quantity } = props.item;
 
     // Dispatch to remove a product
     const dispatch = useDispatch();
@@ -17,7 +17,7 @@ export const ItemCart = (props) => {
     const incrementItem = () => {
         dispatch(
             cartActions.addItem({
-                id,
+                id, 
                 name,
                 price,
                 image,
