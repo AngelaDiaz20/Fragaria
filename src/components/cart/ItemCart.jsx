@@ -37,26 +37,26 @@ export const ItemCart = (props) => {
 
     return (
         <article className='cart_item'>
-            <div>
+            <div className='container_image'>
                 <img src={image} alt={name} />
             </div>
-            <div>
-                <h3>{name}</h3>
-                <p>{price}</p>
+            <div className='description'>
+                <h2>{name}</h2>
+                <p>$ {priceFormat.format(price)} COP</p>
             </div>
             <div className='buttons_container'>
 
-                <HiTrash onClick={deleteItem} />
+                <HiTrash onClick={deleteItem} className='icon_trash'/>
 
                 <div className='buttons_quantity'>
                     <span className="btn_increase" onClick={decreaseItem}>
-                        <HiMinus/>
+                        <HiMinus className='icon'/>
                     </span>
 
                     <span className="quantity">{quantity}</span>
 
                     <span className="btn_decrease" onClick={incrementItem}>
-                        <HiPlus/>
+                        <HiPlus className='icon'/>
                     </span>
                 </div>
             </div>

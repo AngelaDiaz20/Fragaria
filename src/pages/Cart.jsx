@@ -10,6 +10,7 @@ import "../styles/Cart.css";
 
 // Import Components
 import TableRow from "../components/UI/Table/TableRow";
+import { ItemCart } from "../components/cart/ItemCart";
 import { priceFormat } from "../App";
 
 const Cart = () => {
@@ -30,30 +31,36 @@ const Cart = () => {
             {cartItems.length === 0 ? (
               <h3 className="text-center mt-5 mb-5">El carrito está vacío</h3>
             ) : (
-              <Table
-                bordered
-                responsive
-                hover
-                className="table mt-5 text-center"
-              >
-                <thead>
-                  <tr>
-                    <th>Imagen</th>
-                    <th>Nombre del Producto</th>
-                    <th>Precio</th>
-                    <th>Cantidad</th>
-                    <th>Total</th>
-                    <th>Opciones</th>
-                  </tr>
-                </thead>
+              // <Table
+              //   bordered
+              //   responsive
+              //   hover
+              //   className="table mt-5 text-center"
+              // >
+              //   <thead>
+              //     <tr>
+              //       <th>Imagen</th>
+              //       <th>Nombre del Producto</th>
+              //       <th>Precio</th>
+              //       <th>Cantidad</th>
+              //       <th>Total</th>
+              //       <th>Opciones</th>
+              //     </tr>
+              //   </thead>
 
-                <tbody>
-                  {/* Generate table rows */}
-                  {cartItems.map((item) => (
-                    <TableRow item={item} key={item.id} />
-                  ))}
-                </tbody>
-              </Table>
+              //   <tbody>
+              //     {/* Generate table rows */}
+              //     {cartItems.map((item) => (
+              //       <TableRow item={item} key={item.id} />
+              //     ))}
+              //   </tbody>
+              // </Table>
+              <div>
+              {cartItems.map((item) => (
+                <ItemCart item={item} key={item.id} />
+              ))}
+              </div>
+
             )}
 
             <div className="cart__content">
