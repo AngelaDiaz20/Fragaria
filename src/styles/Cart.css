@@ -1,0 +1,78 @@
+.hero__img-cart {
+  background-image: url(../assets/img/Img-2.jpg);
+  height: 50rem;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-top: 5rem;
+  width: 100%;
+}
+
+th {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+td {
+  font-size: 1.2rem;
+}
+
+.cart__img-box,
+.cart__price-box {
+  width: 8rem;
+}
+
+.cart__img-box img {
+  width: 100%;
+}
+
+.cart__icon-box {
+  cursor: pointer;
+}
+
+.cart__content {
+  margin-top: 5rem;
+}
+
+.cart__subtotal {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.cart__subtotal span {
+  color: #a6032f;
+  font-weight: 700;
+}
+
+.cart__desc {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+
+.cart__btns {
+  margin-top: 3rem;
+}
+
+.cart__btn {
+  border: none;
+  padding: 0.7rem 2.5rem;
+  background: #a6032f;
+  color: #ffffff;
+  border-radius: 7px;
+  font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  th,
+  td {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .cart__img-box,
+  .cart__price-box {
+    width: 10rem;
+  }
+}

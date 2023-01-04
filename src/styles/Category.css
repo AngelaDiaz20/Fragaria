@@ -1,0 +1,29 @@
+.category__item {
+  background: #f291bf;
+  padding: 2rem 1.2rem;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.category__item:hover {
+  transform: translateY(-15px);
+}
+
+.category__item h6 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.category__img {
+  background: #f3c2dd;
+  z-index: 1;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.category__img img {
+  width: 4rem;
+  height: 4rem;
+}

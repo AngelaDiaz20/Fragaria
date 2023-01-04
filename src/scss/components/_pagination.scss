@@ -1,0 +1,36 @@
+.paginationBttns {
+    width: 80%;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 14px;
+    list-style: none;
+    margin: 40px auto 80px;
+
+    a {
+        width: 35px;
+        height: 35px;
+        background: #c6b8f32f;
+        color: black;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
+        cursor: pointer;
+
+        
+        &:hover {
+            transition: 300ms ease;
+            background: #c6b8f3f5;
+        }
+    }
+
+    .active_pagination{
+        background: #c6b8f3f5;
+        border-radius: 50%;
+    }
+    
+}

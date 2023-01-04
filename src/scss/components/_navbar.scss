@@ -1,19 +1,18 @@
 header{
     background: $purple-dark;
     display: grid;
-    grid-template-columns: auto 250px;
-    padding: 10px 50px;
+    align-items: center;
+    grid-template-columns: auto min-content min-content;
+    padding: 8px 40px;
     font-family: $title-font;
     font-size: 20px;
 
     img{
-        width: 150px;
+        width: 120px;
     }
 
     nav{
-        display: flex;
-        align-items: center;
-        width: min-content;
+        display: none;
     }
 
     a{
@@ -27,5 +26,56 @@ header{
     .link_icon{
         border: 1px solid white;
         padding: 5px;
+        position: relative;
+        font-size: 10px;
     }
+
+    .icon_menu{
+        color: white;
+        font-size: 30px;
+    }
+
+    .item_total{
+        position: absolute;
+        top: 0;
+        right: 2px;
+    }
+} 
+
+@media screen and (min-width:768px) {
+    header{
+        background: $purple-dark;
+        display: grid;
+        grid-template-columns: auto 250px;
+        padding: 10px 50px;
+        font-family: $title-font;
+        font-size: 20px;
+    
+        img{
+            width: 150px;
+        }
+    
+        nav{
+            display: flex;
+            align-items: center;
+            width: min-content;
+        }
+    
+        a{
+            margin: 0 15px;
+        }
+    
+        .icon_shop{
+            font-size: 20px;
+        }
+    
+        .link_icon{
+            border: 1px solid white;
+            padding: 5px;
+        }
+
+        .icon_menu, .link_icon:first-of-type{
+            display: none;
+        }
+    } 
 }

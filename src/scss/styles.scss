@@ -8,5 +8,14 @@
 //Components
 @import './components/navbar';
 @import './components/footer';
+@import './components/button';
+@import './components/category';
+@import './components/productCard';
+@import './components/formProduct';
+@import './components/pagination';
+@import './components/modal';
 
 //Pages
+@import './pages/home';
+@import './pages/products';
+@import './pages/detailsProduct';

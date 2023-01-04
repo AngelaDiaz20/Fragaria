@@ -1,0 +1,60 @@
+
+.form-product{
+    margin: auto 0;
+    width: 400px;
+
+    .selectors{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:10px;
+    }
+
+    .form-group{
+        position: relative;
+
+        input, textarea{
+            border:2px solid $purple-light;
+            border-radius: 5px;
+            font-family: $paragraph-font;
+            width: 100%;
+            margin: 7px 0;
+            padding: 0 5px;
+            background: rgba(255, 255, 255, 0.458);
+            backdrop-filter: blur(2px);
+
+            &:focus{
+                box-shadow: 0 0 0 3px #a992f623;
+                border-color: #a992f6;
+                outline: none;
+            }
+        }
+
+        input{
+            height: 40px;
+        }
+
+        textarea{
+            padding-top: 10px;
+        }
+
+        label{
+            background: rgba(255, 255, 255, 0.814);
+            padding: 0 5px;
+            position: absolute;
+            left:15px;
+            top: -2px;
+            font-size: 13px;
+            z-index: 1;
+        }
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    .button_form{
+        margin: 15px auto;
+    }
+
+}
+
