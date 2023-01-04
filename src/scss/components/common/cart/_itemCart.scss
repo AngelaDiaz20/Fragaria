@@ -1,5 +1,5 @@
 .cart_item{
-    height: 120px;
+    min-height: 120px;
     margin: 5px;
     width: 90%;
     background: rgba(255, 255, 255, 0.45);
@@ -31,6 +31,10 @@
         flex-direction: column;
         justify-content: space-between;
         padding: 15px 0 5px;
+
+        h2{
+            font-size: 22px;
+        }
     }
 
     .buttons_container{
