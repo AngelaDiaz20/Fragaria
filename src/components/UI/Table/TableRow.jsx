@@ -16,6 +16,22 @@ const TableRow = (props) => {
   // Dispatch to remove a product
   const dispatch = useDispatch();
 
+  const incrementItem = () => {
+    dispatch(
+      cartActions.addItem({
+        id,
+        name,
+        price,
+        image,
+      })
+    );
+  };
+
+  // Remove products to cart
+  const decreaseItem = () => {
+    dispatch(cartActions.removeItem(id));
+  };
+
   // Remove a product from the cart
   const deleteItem = () => {
     dispatch(cartActions.deleteItem(id));
@@ -41,6 +57,16 @@ const TableRow = (props) => {
 
       <td className="text-center cart__icon-box">
         <i className="ri-delete-bin-fill" onClick={deleteItem}></i>
+        
+        <span className="increase__btn" onClick={incrementItem}>
+          <i className="ri-add-fill"></i>
+        </span>
+
+        <span className="quantity">{quantity}</span>
+
+        <span className="decrease__btn" onClick={decreaseItem}>
+          <i className="ri-subtract-fill"></i>
+        </span>
       </td>
     </tr>
   );

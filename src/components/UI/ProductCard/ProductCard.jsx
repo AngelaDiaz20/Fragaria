@@ -51,7 +51,7 @@ const ProductCard = (props) => {
 
       <ModalAdd
         name={name}
-        price={price}
+        price={priceFormat.format(price)}
         image={image}
         show={modalShow}
         onHide={() => setModalShow(false)}

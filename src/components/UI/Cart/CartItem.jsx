@@ -33,7 +33,7 @@ const CartItem = ({ item }) => {
   const decreaseItem = () => {
     dispatch(cartActions.removeItem(id));
   };
-
+ 
   // Delete products to cart
   const deleteItem = () => {
     dispatch(cartActions.deleteItem(id));

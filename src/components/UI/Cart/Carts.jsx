@@ -41,7 +41,7 @@ const Carts = () => {
             <h6 className="text-center mt-5">El carrito está vacío</h6>
           ) : (
             cartProducts.map((item, index) => (
-              <CartItem item={item} key={index} />
+              <CartItem item={item} key={index}/> 
             ))
           )}
         </div>

@@ -1,70 +1,61 @@
-.modalBackground {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(200, 200, 200);
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+.modal_container{
+    background: rgba(40, 40, 42, 0.384);
 
-.modalContainer {
-    width: 500px;
-    height: 500px;
-    border-radius: 12px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    display: flex;
-    flex-direction: column;
-    padding: 25px;
-}
+    .modal_header{
+        background: $purple-light;
+        
+        .modal_icon{
+            color: green;
+            font-size: 20px;
+        }
 
-.modalContainer .title {
-    display: inline-block;
-    text-align: center;
-    margin-top: 10px;
-}
+    }
 
-.titleCloseBtn {
-    display: flex;
-    justify-content: flex-end;
-}
+    .modal_body{
 
-.titleCloseBtn button {
-    background-color: transparent;
-    border: none;
-    font-size: 25px;
-    cursor: pointer;
-}
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 300px 1fr;
 
-.modalContainer .body {
-    flex: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.7rem;
-    text-align: center;
-}
+        h1{
+            font-size: 30px;
+            margin-right: 10px;
+            color: $purple-dark;
+            border-bottom: 1px solid black;
+            font-family: $title-font;
+        }
 
-.modalContainer .footer {
-    flex: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        div:first-of-type{
+            width: 250px;
+            height: 250px;
+            margin: auto;
 
-.modalContainer .footer button {
-    width: 150px;
-    height: 45px;
-    margin: 10px;
-    border: none;
-    background-color: cornflowerblue;
-    color: white;
-    border-radius: 8px;
-    font-size: 20px;
-    cursor: pointer;
-}
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
 
-#cancelBtn {
-    background-color: crimson;
+    .modal_footer{
+        .button_modal{
+            background-color: transparent;
+            border: 2px solid #000;
+            border-radius: 0;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            margin: 0;
+            outline: none;
+            overflow: visible;
+            padding: .7em 2em;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            text-transform: none;
+            transition: all 0.3s ease-in-out;
+            user-select: none;
+            font-size: 13px;
+        }
+    }
 }
