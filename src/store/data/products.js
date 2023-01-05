@@ -4,14 +4,14 @@
     ===================================
 */
 
-import desayuno_01 from "../img/products/desayunos/desayuno_01.jpg";
-import desayuno_02 from "../img/products/desayunos/desayuno_02.jpg";
-import desayuno_03 from "../img/products/desayunos/desayuno_03.jpg";
-import desayuno_04 from "../img/products/desayunos/desayuno_04.jpg";
-import desayuno_05 from "../img/products/desayunos/desayuno_05.jpg";
-import desayuno_06 from "../img/products/desayunos/desayuno_06.jpg";
-import desayuno_07 from "../img/products/desayunos/desayuno_07.jpg";
-import desayuno_08 from "../img/products/desayunos/desayuno_08.jpg";
+import desayuno_01 from "../../assets/img/products/desayunos/desayuno_01.jpg";
+import desayuno_02 from "../../assets/img/products/desayunos/desayuno_02.jpg";
+import desayuno_03 from "../../assets/img/products/desayunos/desayuno_03.jpg";
+import desayuno_04 from "../../assets/img/products/desayunos/desayuno_04.jpg";
+import desayuno_05 from "../../assets/img/products/desayunos/desayuno_05.jpg";
+import desayuno_06 from "../../assets/img/products/desayunos/desayuno_06.jpg";
+import desayuno_07 from "../../assets/img/products/desayunos/desayuno_07.jpg";
+import desayuno_08 from "../../assets/img/products/desayunos/desayuno_08.jpg";
 
 /*
     ===================================
@@ -19,23 +19,23 @@ import desayuno_08 from "../img/products/desayunos/desayuno_08.jpg";
     ===================================
 */
 
-import fresas_01 from "../img/products/Fresas_chocolates/fresas_01.jpg";
-import fresas_02 from "../img/products/Fresas_chocolates/fresas_02.jpg";
-import fresas_03 from "../img/products/Fresas_chocolates/fresas_03.jpg";
-import fresas_04 from "../img/products/Fresas_chocolates/fresas_04.jpg";
-import fresas_05 from "../img/products/Fresas_chocolates/fresas_05.jpg";
-import fresas_06 from "../img/products/Fresas_chocolates/fresas_06.jpg";
-import fresas_07 from "../img/products/Fresas_chocolates/fresas_07.jpg";
-import fresas_08 from "../img/products/Fresas_chocolates/fresas_08.jpg";
-import fresas_09 from "../img/products/Fresas_chocolates/fresas_09.jpg";
-import fresas_10 from "../img/products/Fresas_chocolates/fresas_10.jpg";
-import fresas_11 from "../img/products/Fresas_chocolates/fresas_11.jpg";
-import fresas_12 from "../img/products/Fresas_chocolates/fresas_12.jpg";
-import paletas_13 from "../img/products/Fresas_chocolates/paletas_13.jpg";
-import fresas_14 from "../img/products/Fresas_chocolates/fresas_14.jpg";
-import fresas_15 from "../img/products/Fresas_chocolates/fresas_15.jpg";
-import fresas_16 from "../img/products/Fresas_chocolates/fresas_16.jpg";
-import chocolate_corazon from "../img/products/Fresas_chocolates/chocolate_corazon.jpg"
+import fresas_01 from "../../assets/img/products/Fresas_chocolates/fresas_01.jpg";
+import fresas_02 from "../../assets/img/products/Fresas_chocolates/fresas_02.jpg";
+import fresas_03 from "../../assets/img/products/Fresas_chocolates/fresas_03.jpg";
+import fresas_04 from "../../assets/img/products/Fresas_chocolates/fresas_04.jpg";
+import fresas_05 from "../../assets/img/products/Fresas_chocolates/fresas_05.jpg";
+import fresas_06 from "../../assets/img/products/Fresas_chocolates/fresas_06.jpg";
+import fresas_07 from "../../assets/img/products/Fresas_chocolates/fresas_07.jpg";
+import fresas_08 from "../../assets/img/products/Fresas_chocolates/fresas_08.jpg";
+import fresas_09 from "../../assets/img/products/Fresas_chocolates/fresas_09.jpg";
+import fresas_10 from "../../assets/img/products/Fresas_chocolates/fresas_10.jpg";
+import fresas_11 from "../../assets/img/products/Fresas_chocolates/fresas_11.jpg";
+import fresas_12 from "../../assets/img/products/Fresas_chocolates/fresas_12.jpg";
+import paletas_13 from "../../assets/img/products/Fresas_chocolates/paletas_13.jpg";
+import fresas_14 from "../../assets/img/products/Fresas_chocolates/fresas_14.jpg";
+import fresas_15 from "../../assets/img/products/Fresas_chocolates/fresas_15.jpg";
+import fresas_16 from "../../assets/img/products/Fresas_chocolates/fresas_16.jpg";
+import chocolate_corazon from "../../assets/img/products/Fresas_chocolates/chocolate_corazon.jpg"
 
 /*
     ===================================
@@ -43,13 +43,13 @@ import chocolate_corazon from "../img/products/Fresas_chocolates/chocolate_coraz
     ===================================
 */
 
-import torta_01 from "../img/products/tortas/torta_01.jpg";
-import torta_02 from "../img/products/tortas/torta_02.jpg";
-import torta_03 from "../img/products/tortas/torta_03.jpg";
-import torta_04 from "../img/products/tortas/torta_04.jpg";
-import torta_05 from "../img/products/tortas/torta_05.jpg";
-import torta_06 from "../img/products/tortas/torta_06.jpg";
-import torta_07 from "../img/products/tortas/torta_07.jpg";
+import torta_01 from "../../assets/img/products/tortas/torta_01.jpg";
+import torta_02 from "../../assets/img/products/tortas/torta_02.jpg";
+import torta_03 from "../../assets/img/products/tortas/torta_03.jpg";
+import torta_04 from "../../assets/img/products/tortas/torta_04.jpg";
+import torta_05 from "../../assets/img/products/tortas/torta_05.jpg";
+import torta_06 from "../../assets/img/products/tortas/torta_06.jpg";
+import torta_07 from "../../assets/img/products/tortas/torta_07.jpg";
 
 /*
     ===================================
@@ -57,15 +57,15 @@ import torta_07 from "../img/products/tortas/torta_07.jpg";
     ===================================
 */
 
-import agenda_combo from "../img/products/mugs_agendas/agenda_combo.jpg";
-import agenda_01 from "../img/products/mugs_agendas/agendas_01.jpg";
-import agenda_02 from "../img/products/mugs_agendas/agendas_02.jpg";
-import botella_01 from "../img/products/mugs_agendas/botella_01.jpg";
-import botella_02 from "../img/products/mugs_agendas/botella_02.jpg";
-import mug_01 from "../img/products/mugs_agendas/mug_01.jpg";
-import mug_02 from "../img/products/mugs_agendas/mug_02.jpg";
-import mug_03 from "../img/products/mugs_agendas/mug_03.jpg";
-import mug_04 from "../img/products/mugs_agendas/mug_04.jpg";
+import agenda_combo from "../../assets/img/products/mugs_agendas/agenda_combo.jpg";
+import agenda_01 from "../../assets/img/products/mugs_agendas/agendas_01.jpg";
+import agenda_02 from "../../assets/img/products/mugs_agendas/agendas_02.jpg";
+import botella_01 from "../../assets/img/products/mugs_agendas/botella_01.jpg";
+import botella_02 from "../../assets/img/products/mugs_agendas/botella_02.jpg";
+import mug_01 from "../../assets/img/products/mugs_agendas/mug_01.jpg";
+import mug_02 from "../../assets/img/products/mugs_agendas/mug_02.jpg";
+import mug_03 from "../../assets/img/products/mugs_agendas/mug_03.jpg";
+import mug_04 from "../../assets/img/products/mugs_agendas/mug_04.jpg";
 
 /*
     ===================================
@@ -73,16 +73,16 @@ import mug_04 from "../img/products/mugs_agendas/mug_04.jpg";
     ===================================
 */
 
-import combo_01 from "../img/products/combos/combo_01.jpg"
-import combo_02 from "../img/products/combos/combo_02.jpg"
-import combo_03 from "../img/products/combos/combo_03.jpg"
-import combo_04 from "../img/products/combos/combo_04.jpg"
-import combo_05 from "../img/products/combos/combo_05.jpg"
-import combo_06 from "../img/products/combos/combo_06.jpg"
-import combo_07 from "../img/products/combos/combo_07.jpg"
-import combo_08 from "../img/products/combos/combo_08.jpg"
-import flores_01 from "../img/products/combos/flores_1.jpg"
-import flores_02 from "../img/products/combos/flores_2.jpg"
+import combo_01 from "../../assets/img/products/combos/combo_01.jpg"
+import combo_02 from "../../assets/img/products/combos/combo_02.jpg"
+import combo_03 from "../../assets/img/products/combos/combo_03.jpg"
+import combo_04 from "../../assets/img/products/combos/combo_04.jpg"
+import combo_05 from "../../assets/img/products/combos/combo_05.jpg"
+import combo_06 from "../../assets/img/products/combos/combo_06.jpg"
+import combo_07 from "../../assets/img/products/combos/combo_07.jpg"
+import combo_08 from "../../assets/img/products/combos/combo_08.jpg"
+import flores_01 from "../../assets/img/products/combos/flores_1.jpg"
+import flores_02 from "../../assets/img/products/combos/flores_2.jpg"
 
 //* Products Information
 

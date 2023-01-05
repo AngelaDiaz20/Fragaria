@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react"
 import ReactPaginate from "react-paginate";
-import Products from "../assets/data/products"
+
+import Header from "../components/layouts/Header";
+import Footer from "../components/layouts/Footer";
+import Products from "../store/data/products"
 import ProductCard from "../components/common/ProductCard"
 
 import { FaSearch } from 'react-icons/fa'
@@ -13,7 +16,7 @@ import Desayuno from '../assets/img/products/desayunos/desayuno_05.jpg'
 import Mug from '../assets/img/products/mugs_agendas/agenda_combo.jpg'
 import Combo from '../assets/img/products/combos/combo_05.jpg'
 
-const AllProducts = () => {
+const Product = () => {
   // Search product
   const [search, setSearch] = useState("");
   const [allProducts, setAllProducts] = useState(Products);
@@ -140,6 +143,7 @@ const AllProducts = () => {
 
   return (
     <>
+    <Header/>
 
       <main className='container_products'>
 
@@ -245,9 +249,9 @@ const AllProducts = () => {
               activeClassName={"active_pagination"}
             />
           </div>
-  
+      <Footer/>
     </>
   );
 };
 
-export default AllProducts;
+export default Product;

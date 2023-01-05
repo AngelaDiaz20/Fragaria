@@ -4,11 +4,10 @@ import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
 
 // Import data products
-import Products from "../assets/data/products";
+import Products from "../store/data/products";
 
 // Import Styles
 import { Container, Row, Col } from "reactstrap";
-import "../styles/ProductDetails.css";
 
 // Import Components
 import ProductCard from "../components/common/ProductCard";
@@ -117,25 +116,6 @@ const ProductDetails = () => {
 
               <p className="product__desc">{product.description}</p>
 
-              {/* <div className="product__features d-flex align-items-center justify-content-evenly">
-                {product.feature1 === "" ? (
-                  <p></p>
-                ) : (
-                  <p className="product__feature">{product.feature1}</p>
-                )}
-
-                {product.feature2 === "" ? (
-                  <p></p>
-                ) : (
-                  <p className="product__feature">{product.feature2}</p>
-                )}
-
-                {product.feature3 === "" ? (
-                  <p></p>
-                ) : (
-                  <p className="product__feature">{product.feature3}</p>
-                )}
-              </div> */}
             </Col>
 
             <Col lg="12" className="text-center">

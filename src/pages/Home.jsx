@@ -9,12 +9,15 @@ import Product3 from '../assets/img/products/product_3.jpg'
 import Product4 from '../assets/img/products/product_4.jpg'
 import Banner from '../assets/img/banner.png'
 
+import Header from "../components/layouts/Header"
+import Footer from "../components/layouts/Footer"
 import Button from '../components/common/Button'
 
 const Home = () => {
 
   return (
     <>
+      <Header/>
       <main>
         <div className='banner_container'>
           <img src={Banner} alt="Banner" className='banner' />
@@ -56,7 +59,7 @@ const Home = () => {
             
         </section>
       </main>
-
+      <Footer/>
     </>
   );
 };
