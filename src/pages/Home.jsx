@@ -14,7 +14,7 @@ import Footer from "../components/layouts/Footer"
 import Button from '../components/common/Button'
 
 const Home = () => {
-
+ 
   return (
     <>
       <Header/>

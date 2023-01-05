@@ -2,9 +2,14 @@
     position: relative;
     margin-bottom: -65px;
     z-index: 10;
+    height: 80vh;
 
     .banner {
+        object-fit: cover;
+        right: 0;
         width: 100%;
+        object-position: -400px 0;
+        height: 100%;
         z-index: 10;
     }
 }
@@ -100,6 +105,7 @@
     width: 85%;
     max-width: 250px;
     height: 40px;
+    bottom: 25%;
 
     position: relative;
     margin: 20px auto 0;
@@ -123,80 +129,54 @@
     }
 }
 
+@media screen and (min-width:535px) {
+    .banner_container {
+
+        .banner {
+            object-position: unset;
+        }
+    }
+
+    .bg-color {
+        width: 280px;
+        position: relative;
+        left: -20%;
+    }
+
+    .btn_catalog {
+        bottom: 0;
+        left: 0;
+    }
+
+
+}
+
 @media screen and (min-width:768px) {
     .banner_container {
         margin-bottom: -62px;
+        height: 90vh;
     }
 
     .summary {
         display: grid;
         grid-template-columns: 54% 46%;
-        padding: 0;
+        margin-top: 60px;
 
         img:first-child {
             width: 100%;
-            margin: 0;
-            padding: 0;
         }
 
         .description {
             width: 100%;
-            display: flex;
-            flex-direction: column;
             align-items: flex-end;
-
-            div {
-                width: 80%;
-                margin: 0 auto;
-            }
-        }
-
-        h1 {
-            width: 80%;
-            font-size: 40px;
-        }
-
-        h1:last-of-type {
-            text-align: end;
         }
 
         p {
-            font-size: 16px;
             text-align: end;
-            width: 95%;
             margin: 30px auto;
         }
     }
 
-
-    .bg-color {
-        background: white;
-        width: 280px;
-        height: 40px;
-        position: relative;
-        left: 200px;
-        bottom: 200px;
-
-        .button {
-            bottom: 0;
-            height: 100%;
-            width: 100%;
-            left: 0;
-            top: 0;
-            right: 0;
-        }
-    }
-
-    .btn_catalog {
-        bottom: 50px;
-        left: 50px;
-
-        .button {
-            bottom: unset;
-            top: unset;
-            margin: 0;
-        }
-    }
 }
 
 @media screen and (min-width:1024px) {

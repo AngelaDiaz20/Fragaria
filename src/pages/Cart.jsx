@@ -14,6 +14,9 @@ import Michi from "../assets/img/michi.png"
 import {HiOutlineShoppingCart} from 'react-icons/hi'
 import {AiFillCloseCircle} from 'react-icons/ai'
 
+import Header from "../components/layouts/Header";
+import Footer from "../components/layouts/Footer";
+
 
 const Cart = () => {
   // Select cart items
@@ -25,6 +28,7 @@ const Cart = () => {
 
   return (
     <>
+      <Header/>
       <div className="container_cart">
         <div className="cart_description">
           <Link to='/products'><AiFillCloseCircle className="icon_close"/></Link>
@@ -82,7 +86,7 @@ const Cart = () => {
                 <ReactWhatsapp
                   number="57-301-222-9139"
                   message={`Buen día, deseo comprar los siguientes productos: 
-            ${cartItems.map(
+                  ${cartItems.map(
                     (item) =>
                       `\n\t-${item.quantity}  ${item.name} de $${item.totalPrice}`
                   )}\n\n*Valor Total:  $ ${totalAmount}*`}
@@ -125,6 +129,8 @@ const Cart = () => {
         )}
 
       </div>
+
+      <Footer class="hide"/>
 
     </>
   );
