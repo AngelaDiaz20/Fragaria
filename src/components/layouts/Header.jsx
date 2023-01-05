@@ -1,6 +1,6 @@
 // Import dependencies
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 // Import images
@@ -16,16 +16,19 @@ const Header = () => {
 
   return (
     <header className="header" >
-      <img src={Logo} alt="Logo de Fragaria" />
-            <Link to='/home' className='link_icon'><FaShopify className='icon_shop' /></Link>
-            < MdMenuOpen className='icon_menu' />
-            <nav>
-                <Link to='/home'>Inicio</Link>
-                <Link to='/products'>Productos</Link>
-                <Link to='/cart' className='link_icon'>
+      <Link to='/home' className="container_logo"><img src={Logo} alt="Logo de Fragaria" /></Link>
+            <Link to='/cart' className='link_icon'>
                     <FaShopify className='icon_shop'/>
                     <span className='item_total'>{totalQuantity}</span>
-                </Link>
+            </Link>
+            < MdMenuOpen className='icon_menu' />
+            <nav>
+                <NavLink to='/home' activeClassName='link_active'>Inicio</NavLink>
+                <NavLink to='/products' activeClassName='link_active'>Productos</NavLink>
+                <NavLink to='/cart' activeClassName='link_active' className='link_icon'>
+                    <FaShopify className='icon_shop'/>
+                    <span className='item_total'>{totalQuantity}</span>
+                </NavLink>
             </nav> 
     </header>
   );

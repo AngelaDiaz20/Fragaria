@@ -14,7 +14,8 @@ html{
 body{
     font-family: $paragraph-font;
     margin-bottom: 253px;
-    background: url('../../assets/img/bg-products.png') center/contain;
+    padding-top: 60px;
+    background: url('../../assets/img/bg-products.png') center/cover;
 }
 
 a{
@@ -26,4 +27,13 @@ h1{
     color: $title-color;
     font-family: $title-font;
     font-weight: 900;
+}
+
+@media screen and (min-width:768px) {
+    body{
+        font-family: $paragraph-font;
+        margin-bottom: 253px;
+        padding-top: 75px;
+        background: url('../../assets/img/bg-products.png') center/cover;
+    }
 }

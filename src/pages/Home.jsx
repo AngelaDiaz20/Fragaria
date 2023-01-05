@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useNavigate} from "react";
+import { Link } from "react-router-dom";
 
 import Store from '../assets/img/store.svg'
 
@@ -11,13 +12,15 @@ import Banner from '../assets/img/banner.png'
 import Button from '../components/common/Button'
 
 const Home = () => {
+
   return (
-    // Page title
     <>
       <main>
         <div className='banner_container'>
           <img src={Banner} alt="Banner" className='banner' />
-          <Button text="Ir a la tienda" classe="button_banner" />
+          <div className="bg-color">
+            <Link to='/products'><Button text="Ir a la tienda" classe="button_banner" /></Link>
+          </div>
         </div>
         <section className='summary'>
           <img src={Store} alt="Imagen de tienda" />
@@ -36,12 +39,24 @@ const Home = () => {
         <section className='products_catalogue'>
           <h1 className='title-po'>Cónoce nuestros productos</h1>
           <article>
-            <img src={Product1} alt="" />
-            <img src={Product2} alt="" />
-            <img src={Product3} alt="" />
-            <img src={Product4} alt="" />
+            <div className="curve_top">
+              <img src={Product1} alt="" />
+            </div>
+            <div className="curve_top">
+              <img src={Product2} alt="" />
+            </div>
+            <div className="curve_bottom">
+              <img src={Product3} alt="" />
+            </div>
+            <div className="curve_bottom">
+              <img src={Product4} alt="" />
+            </div>
           </article>
-          <Button text="Ver catálogo" classe="button" />
+
+          <div className="bg-color btn_catalog">
+          <Link to='/products'><Button text="Ver catálogo" classe="button" /></Link>
+          </div>
+            
         </section>
       </main>
 

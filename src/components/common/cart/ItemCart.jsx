@@ -58,6 +58,8 @@ export const ItemCart = (props) => {
                     <span className="btn_decrease" onClick={incrementItem}>
                         <HiPlus className='icon'/>
                     </span>
+
+                    
                 </div>
             </div>
         </article>

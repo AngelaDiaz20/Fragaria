@@ -1,12 +1,16 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import ReactWhatsapp from "react-whatsapp";
+import { Link } from "react-router-dom";
 
 import { FaShopify } from "react-icons/fa";
 
 import { TableRow } from "../components/common/cart/TableRow";
 import { ItemCart } from "../components/common/cart/ItemCart";
 import { priceFormat } from "../App";
+
+import Michi from "../assets/img/michi.png"
+
 
 const Cart = () => {
   // Select cart items
@@ -17,58 +21,69 @@ const Cart = () => {
 
   return (
     <>
-      <div className="container_items">
+      <div>
         {cartItems.length === 0 ? (
-          <h3>El carrito está vacío</h3>
+          <div className="void_cart">
+            <h4>Aún no has agregado productos al carrito de compras</h4>
+            <img src={Michi} alt="Imagen de gatito" />
+            <Link to="/products" className="link">
+              <button class="button_cartVoid">
+                <span>Añadir productos al carrito</span>
+                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </button>
+            </Link>
+          </div>
         ) : (
-          <div>
-            {cartItems.map((item) => (
-              <ItemCart item={item} key={item.id} />
-            ))}
+          <div className="container_items">
+            <div>
+              {cartItems.map((item) => (
+                <ItemCart item={item} key={item.id} />
+              ))}
+            </div>
+
+            <div className="table_cart">
+              <h2>Resumen de compra</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Und</th>
+                    <th>Producto</th>
+                    <th>Valor</th>
+                    <th>Valor total</th>
+                  </tr>
+                </thead>
+                {cartItems.map((item) => (
+                  <TableRow item={item} key={item.id} />
+                ))}
+                <tfoot>
+                  <tr>
+                    <th colSpan={4}>Total $ {priceFormat.format(totalAmount)} COP</th>
+                  </tr>
+                </tfoot>
+              </table>
+
+              <div className="button_whatsapp">
+                {/* Send message to whatsapp for purchase */}
+                <ReactWhatsapp
+                  number="57-301-222-9139"
+                  message={`Buen día, deseo comprar los siguientes productos: 
+            ${cartItems.map(
+                    (item) =>
+                      `\n\t-${item.quantity}  ${item.name} de $${item.totalPrice}`
+                  )}\n\n*Valor Total:  $ ${totalAmount}*`}
+                  className="button"
+                >
+                  <FaShopify className='icon' />COMPRAR
+                </ReactWhatsapp>
+                <p><span>*</span>Serás redireccionado a WhatsApp para finalizar tu compra</p>
+              </div>
+            </div>
           </div>
         )}
 
-        {cartItems.length === 0 ? (
-          <div></div>
-        ) : (
-        <div className="table_cart">
-          <h2>Resumen de compra</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Und</th>
-                <th>Producto</th>
-                <th>Valor</th>
-                <th>Valor total</th>
-              </tr>
-            </thead>
-            {cartItems.map((item) => (
-              <TableRow item={item} key={item.id} />
-            ))}
-            <tfoot>
-              <tr>
-                <th colSpan={4}>Total $ {priceFormat.format(totalAmount)} COP</th>
-              </tr>
-            </tfoot>
-          </table>
-
-          <div className="button_whatsapp"> 
-          {/* Send message to whatsapp for purchase */}
-          <ReactWhatsapp
-            number="57-301-222-9139"
-            message={`Buen día, deseo comprar los siguientes productos: 
-            ${cartItems.map(
-              (item) =>
-                item.quantity + " " + item.name + " $ " + item.totalPrice 
-            )}para un Total de $ ${totalAmount}`}
-            className="button"
-          >
-            <FaShopify className='icon'/>COMPRAR
-          </ReactWhatsapp>
-          <p><span>*</span>Serás redireccionado a WhatsApp para finalizar tu compra</p>
-        </div>
-        </div>)}
-        
       </div>
 
     </>

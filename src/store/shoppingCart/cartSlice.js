@@ -2,6 +2,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { useState } from "react";
 
+import { priceFormat } from "../../App";
+
 
 // State for createSlice
 const initialState = {

@@ -1,65 +1,148 @@
-.container_items{
+.void_cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+
+    h4 {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    img {
+        height: 35vh;
+        opacity: 0.8;
+    }
+
+    .link {
+
+        .button_cartVoid {
+            position: relative;
+            margin: 10px auto 0;
+            padding: 12px 18px;
+            transition: all 0.2s ease;
+            border: none;
+            background: none;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                border-radius: 50px;
+                background: $purple-light;
+                width: 45px;
+                height: 45px;
+                transition: all 0.3s ease;
+            }
+
+            span {
+                position: relative;
+                font-family: "Ubuntu", sans-serif;
+                font-size: 18px;
+                font-weight: 700;
+                letter-spacing: 0.05em;
+                color: $black;
+            }
+
+            svg {
+                position: relative;
+                top: 0;
+                margin-left: 10px;
+                fill: none;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke:  $black;
+                stroke-width: 2;
+                transform: translateX(-5px);
+                transition: all 0.3s ease;
+            }
+
+            &:hover:before {
+                width: 100%;
+                background: $purple-light;
+            }
+
+            &:hover svg {
+                transform: translateX(0);
+            }
+
+            &:active {
+                transform: scale(0.95);
+            }
+
+        }
+    }
+}
+
+.container_items {
     display: grid;
     grid-template-columns: 60% 40%;
     padding: 50px 100px;
 
-    .table_cart{
+    .table_cart {
         background: #ac25c14d;
         border: 1px solid #C971D7;
         border-radius: 10px;
         padding: 20px;
         backdrop-filter: blur(2px);
 
-        h2{
+        h2 {
             text-align: center;
             margin: 10px 0 20px;
             font-weight: 800;
             font-size: 24px;
         }
 
-        table{
+        table {
             width: 100%;
             text-align: center;
-    
-            thead{
-                th{
+
+            thead {
+                th {
                     padding: 10px 0;
                 }
             }
-    
-            tr{
+
+            tr {
                 border-bottom: 1px solid black;
             }
-            td{
+
+            td {
                 padding: 10px 0;
             }
-            .product_name{
+
+            .product_name {
                 text-align: left;
                 padding-left: 15px;
             }
-    
+
             tfoot {
-                th{
-                border-bottom: none;
-                padding: 15px 0;
-                font-size: 30px;
-                font-weight: 400;
+                th {
+                    border-bottom: none;
+                    padding: 15px 0;
+                    font-size: 30px;
+                    font-weight: 400;
                 }
-                tr{
+
+                tr {
                     border-bottom: none;
                 }
             }
-    
+
         }
-    
-        .button_whatsapp{
+
+        .button_whatsapp {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             margin: 20px 0 0;
-            
-            .button{
+
+            .button {
                 background: black;
                 width: 70%;
                 border: none;
@@ -69,20 +152,22 @@
                 display: inline-block;
                 font-weight: 700;
                 letter-spacing: 0.05em;
-    
-                &:hover{
+
+                &:hover {
                     width: 68%;
                     transition-duration: 200ms;
                 }
             }
-            p{
+
+            p {
                 font-size: 13px;
             }
-            span{
+
+            span {
                 color: rgb(144, 4, 4);
             }
         }
     }
 
-    
+
 }

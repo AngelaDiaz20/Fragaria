@@ -6,9 +6,20 @@ header{
     padding: 8px 40px;
     font-family: $title-font;
     font-size: 20px;
+    position: fixed;
+    margin-top: -60px;
+    width: 100%;
+    z-index: 100;
+
+    .container_logo{
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
 
     img{
         width: 120px;
+        text-align: left;
     }
 
     nav{
@@ -16,7 +27,7 @@ header{
     }
 
     a{
-        margin: 0 15px;
+        margin: 0 15px 0 0;
     }
 
     .icon_shop{
@@ -50,6 +61,7 @@ header{
         padding: 10px 50px;
         font-family: $title-font;
         font-size: 20px;
+        margin-top: -75px;
     
         img{
             width: 150px;
