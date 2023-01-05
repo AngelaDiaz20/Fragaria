@@ -103,6 +103,39 @@ const AllProducts = () => {
     }
   }, [category]);
 
+  // let cat = document.querySelector('.btnn');
+
+  // let hideInformation = document.querySelectorAll('.button_category:not(.all__btn)');
+
+  // cat.addEventListener('click', toggleText);
+
+  // function toggleText (e){
+  //   e.preventDefault();
+    
+  //   hideInformation.classList.toggle('show');
+
+
+    // category_all.forEach ((item) =>
+    //     console.log(item)
+    //     // item.classList.add("show")
+    // );
+    
+  // }
+
+  // function show (){
+  //   const category_show = document.querySelectorAll('.button_category')
+  //   for (var i = 0; i < category_show.length; i++) {
+  //     console.log(category_show[i])
+  //     category_show[i].classList.add("show");
+  //   }
+    
+  //   // category_all.forEach ((item) =>
+  //   //     console.log(item)
+  //   //     // item.classList.add("show")
+  //   // );
+    
+  // }
+
   
 
   return (
@@ -135,7 +168,7 @@ const AllProducts = () => {
               onClick={() => setCategory("ALL")}
             >
               <img src={All} alt="Imagen categoría" />
-              Todo
+              Todo <RxDoubleArrowRight  className="btnn"/>
             </button>
 
             <button
@@ -189,7 +222,7 @@ const AllProducts = () => {
             </button>
           </div>
 
-        </section>
+        </section> 
 
 
         <section className='products_cards'>
@@ -202,7 +235,7 @@ const AllProducts = () => {
         </section>
       </main>
 
-          <div>
+          <div className="container_paginate">
             <ReactPaginate
               pageCount={pageCount}
               onPageChange={changePage}

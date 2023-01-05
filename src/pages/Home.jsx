@@ -1,4 +1,4 @@
-import React, {useNavigate} from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 import Store from '../assets/img/store.png'

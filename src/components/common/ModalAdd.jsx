@@ -4,10 +4,10 @@ import {BsCartCheckFill} from 'react-icons/bs'
 import {Link} from 'react-router-dom'
 
 import Button from './Button'
-import ButtonCart from './cart/ButtonCart';
+
 
 function ModalAdd(props) {
-
+ 
     return (
         <Modal
             {...props}

@@ -1,4 +1,4 @@
-.button_category{
+.button_category{ 
     border-radius:25px;
     padding: 5px 10px 5px 5px;
     background: $purple-light;
@@ -6,7 +6,8 @@
     display: flex;
     align-items: center;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 15px;
+    width: 100%;
 
     &:hover{
         transition: 300ms ease;
@@ -36,5 +37,47 @@
 
     &:hover{
         background: #760181;
+    }
+}
+
+// .all__btn{
+//     position: relative;
+
+//     &:after{
+//         content: '';
+//         width: 20px;
+//         height: 20px;
+//         top: 10px;
+//         right: 10px;
+//         background: rgb(255, 255, 255);
+//         position: absolute;
+//         z-index: 1;
+//         clip-path: polygon(62% 0, 100% 50%, 66% 100%, 33% 100%, 66% 50%, 31% 0);
+//     }
+
+//     &:after:hover{
+//         background: aqua;
+//     }
+// }
+
+// .button_category{
+//     display: none;
+// }
+
+// .all__btn{
+//     display: flex;
+// }
+
+// .show{
+//     display: flex;
+// }
+
+// .hidden{
+//     display: none;
+// }
+
+@media screen and (min-width:1000px) {
+    .button_category{ 
+        width: max-content;
     }
 }

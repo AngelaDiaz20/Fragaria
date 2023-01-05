@@ -4,6 +4,10 @@
     .modal_header{
         background: $purple-light;
         
+        .modal_title{
+            font-size: 15px;
+        }
+        
         .modal_icon{
             color: green;
             font-size: 20px;
@@ -13,32 +17,37 @@
 
     .modal_body{
 
-        padding: 10px;
+        padding: 10px 20px;
         display: grid;
-        grid-template-columns: 300px 1fr;
+        grid-template-columns: 1fr;
 
         h1{
-            font-size: 30px;
-            margin-right: 10px;
+            font-size: 24px;
+            margin: 10px;
             color: $purple-dark;
             border-bottom: 1px solid black;
             font-family: $title-font;
         }
 
         div:first-of-type{
-            width: 250px;
-            height: 250px;
+            width: 200px;
+            height: 200px;
             margin: auto;
 
             img{
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                border-radius: 10px;
             }
         }
     }
 
     .modal_footer{
+
+        display: flex;
+        justify-content: center;
+
         .button_modal{
             background-color: transparent;
             border: 2px solid #000;
@@ -56,6 +65,29 @@
             transition: all 0.3s ease-in-out;
             user-select: none;
             font-size: 13px;
+            width: 216px;
         }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .modal_container{
+    
+        .modal_body{        
+            padding: 10px;
+            grid-template-columns: 300px 1fr;
+    
+            h1{
+                margin: 0 0 20px 0;
+                font-size: 30px;
+                margin-right: 10px;
+            }
+    
+            div:first-of-type{
+                width: 250px;
+                height: 250px;
+            }
+        }
+    
     }
 }
