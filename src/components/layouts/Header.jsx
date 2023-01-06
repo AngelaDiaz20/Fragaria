@@ -10,8 +10,6 @@ import { MdMenuOpen } from 'react-icons/md'
 import {SlClose} from 'react-icons/sl'
 
 import ImageMenu from '../../assets/img/menu-bg.png'
-
-import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
 
