@@ -1,7 +1,7 @@
 /*
-    ===================================
-            Category: Desayunos sorpresa
-    ===================================
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    Category: Desayunos sorpresa
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
 import desayuno_01 from "../../assets/img/products/desayunos/desayuno_01.jpg";
@@ -14,9 +14,9 @@ import desayuno_07 from "../../assets/img/products/desayunos/desayuno_07.jpg";
 import desayuno_08 from "../../assets/img/products/desayunos/desayuno_08.jpg";
 
 /*
-    ===================================
-            Category: Chocolates
-    ===================================
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        Category: Chocolate
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
 import fresas_01 from "../../assets/img/products/Fresas_chocolates/fresas_01.jpg";
@@ -38,9 +38,10 @@ import fresas_16 from "../../assets/img/products/Fresas_chocolates/fresas_16.jpg
 import chocolate_corazon from "../../assets/img/products/Fresas_chocolates/chocolate_corazon.jpg"
 
 /*
-    ===================================
-            Category: Tortas
-    ===================================
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        Category: Tortas
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 */
 
 import torta_01 from "../../assets/img/products/tortas/torta_01.jpg";
@@ -52,9 +53,9 @@ import torta_06 from "../../assets/img/products/tortas/torta_06.jpg";
 import torta_07 from "../../assets/img/products/tortas/torta_07.jpg";
 
 /*
-    ===================================
-            Category: Muggs y agendas
-    ===================================
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                Category: Muggs y agendas
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
 import agenda_combo from "../../assets/img/products/mugs_agendas/agenda_combo.jpg";
@@ -68,9 +69,9 @@ import mug_03 from "../../assets/img/products/mugs_agendas/mug_03.jpg";
 import mug_04 from "../../assets/img/products/mugs_agendas/mug_04.jpg";
 
 /*
-    ===================================
-            Category: Combos
-    ===================================
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    Category: Combos
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
 import combo_01 from "../../assets/img/products/combos/combo_01.jpg"
@@ -88,9 +89,9 @@ import flores_02 from "../../assets/img/products/combos/flores_2.jpg"
 
 const products = [
     /*
-      ===================================
-              Category: Chocolates
-      ===================================
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    Category: Chocolates
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     */
     {
         id: "01",
@@ -273,9 +274,9 @@ const products = [
     },
 
     /*
-      ===================================
-              Category: desayunos
-      ===================================
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        Category: desayunos
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     */
     {
         id: "19",
@@ -358,9 +359,9 @@ const products = [
     },
 
     /*
-      ===================================
-            Category: tortas
-      ===================================
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        Category: tortas
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     */
 
     {
@@ -434,9 +435,9 @@ const products = [
     },
 
     /*
-      ===================================
-            Category: mugs-agendas
-      ===================================
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    Category: mugs-agendas
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     */
 
     {
@@ -530,9 +531,9 @@ const products = [
     },
 
     /*
-     ===================================
-           Category: combos
-     ===================================
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        Category: combos
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    */
 
     {

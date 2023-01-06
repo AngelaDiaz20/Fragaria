@@ -1,7 +1,9 @@
-
 .form-product{
-    margin: auto 0;
-    width: 400px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+
 
     .selectors{
         display: grid;
@@ -50,11 +52,16 @@
 
     p{
         font-size: 12px;
+        text-align: start;
     }
 
     .button_form{
         margin: 15px auto;
-    }
+    } 
 
+}
+
+@media screen and (min-width:768px) {
+    
 }
 

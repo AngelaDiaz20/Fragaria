@@ -39,6 +39,10 @@ header{
         padding: 5px;
         position: relative;
         font-size: 10px;
+        
+        &:hover{
+            color: white;
+        }
     }
 
     .icon_menu{
@@ -52,6 +56,82 @@ header{
         right: 2px;
     }
 } 
+
+.menu_mobile{
+    background: $purple-light;
+    width: 50%;
+
+    .image-menu{
+        height: 200px;
+
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .head{
+        // background:url('../../../assets/img/banner-search2.png') center/cover;
+        height: 61px;
+        border: 1px solid $purple-dark;
+        margin-left: -2px;
+        background:$purple-dark;
+        position: relative;
+
+        .icon{
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            right: 20px;
+        }
+
+        img{
+            height: 50px;
+        }
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 200px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .link_mobile{
+        color: $black;
+        padding: 15px;
+        border-bottom: 1px solid $black;
+
+        &:hover{
+            transition-duration: 300ms;
+            background: #b5a1f8c4;
+            transform: translate(2px);
+        }
+    }
+}
+
+    .link_nav{
+        padding: 5px;
+        &:hover{
+            transition-duration: 300ms;
+            background: #b5a1f83e;
+            transform: translate(2px);
+            color: white;
+            border-radius: 3px;
+            border-bottom: 1px solid white;
+        }
+    }
+
+    .link_active{
+        border-bottom: 1px solid white;
+        background: #C6B8F3;
+        color: white;
+    }
+
+
 
 @media screen and (min-width:768px) {
     header{
