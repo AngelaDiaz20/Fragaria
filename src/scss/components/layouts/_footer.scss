@@ -7,6 +7,7 @@ footer{
     position: absolute;
     bottom: 0;
     width: 100%;
+    margin-top: 0px;
 
     img{
         width: 100px;
@@ -45,6 +46,8 @@ footer{
     }
 }
 
+
 .fill-black .custom-shape-divider-top-1671653195 .shape-fill{
     fill: $black;
+    margin: 0;
 }

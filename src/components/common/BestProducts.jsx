@@ -1,4 +1,3 @@
-// Import dependencies
 import React, { useState, useEffect } from "react";
 import ReactPaginate from "react-paginate";
 
@@ -18,9 +17,9 @@ import Desayuno from '../../assets/img/products/desayunos/desayuno_05.jpg'
 import Mug from '../../assets/img/products/mugs_agendas/agenda_combo.jpg'
 import Combo from '../../assets/img/products/combos/combo_05.jpg'
 
-const Filter = () => {
+const BestProducts = () => {
   // State for categories
-  const [category, setCategory] = useState("ALL");
+  const [category, setCategory] = useState("allProducts");
 
   // State for bestseller products
   const [allProducts, setAllProducts] = useState(Products);
@@ -49,46 +48,46 @@ const Filter = () => {
 
   // Filter all products
   useEffect(() => {
-    if (category === "ALL") {
+    if (category === "allProducts") {
       // Filter all products best seller
       const filteredProducts = Products.filter(
-        (item) => item.bestSeller === true
+        (item) => item.outstanding === true
       );
 
       setAllProducts(filteredProducts);
     }
 
     if (category === "Chocolates") {
-      // Filter products best seller for their category
+      // Filter products for their category
       const filteredProducts = Products.filter(
-        (item) => item.category === "Chocolates" && item.bestSeller === true
+        (item) => item.category === "Chocolates" && item.outstanding === true
       );
 
       setAllProducts(filteredProducts);
     }
 
     if (category === "Desayunos") {
-      // Filter products best seller for their category
+      // Filter products for their category
       const filteredProducts = Products.filter(
-        (item) => item.category === "Desayunos" && item.bestSeller === true
+        (item) => item.category === "Desayunos" && item.outstanding === true
       );
 
       setAllProducts(filteredProducts);
     }
 
     if (category === "Tortas") {
-      // Filter products best seller for their category
+      // Filter products for their category
       const filteredProducts = Products.filter(
-        (item) => item.category === "Tortas" && item.bestSeller === true
+        (item) => item.category === "Tortas" && item.outstanding === true
       );
 
       setAllProducts(filteredProducts);
     }
 
     if (category === "Mugs-agendas") {
-      // Filter products best seller for their category
+      // Filter products for their category
       const filteredProducts = Products.filter(
-        (item) => item.category === "Mugs-agendas" && item.bestSeller === true
+        (item) => item.category === "Mugs-agendas" && item.outstanding === true
       );
 
       setAllProducts(filteredProducts);
@@ -102,7 +101,7 @@ const Filter = () => {
         <div className="filter__category d-flex align-items-center justify-content-center">
           <button
             className={`all__btn ${
-              category === "ALL" ? "button_active" : ""
+              category === "allProducts" ? "button_active" : ""
             }`}
             onClick={() => setCategory("ALL")}
           > 
@@ -153,7 +152,7 @@ const Filter = () => {
       </Col>
 
 
-      {/* Cards with products bestseller */}
+      {/* Cards with the best products*/}
       {displayPage.map((item) => (
         <Col lg="3" md="4" xs="6" key={item.id} className="mt-5 d-flex">
           <ProductCard item={item} />
@@ -174,4 +173,4 @@ const Filter = () => {
   );
 };
 
-export default Filter;
+export default BestProducts;

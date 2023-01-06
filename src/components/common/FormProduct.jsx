@@ -1,55 +1,65 @@
 import React from "react";
 import { Formik } from "formik";
-import Button from "./Button";
-
 import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
+
+// import functions
 import { cartActions } from "../../store/shoppingCart/cartSlice";
+import { formatPrice } from "../../App";
+
+// import components
 import Products from "../../store/data/products";
 import ModalAdd from "./ModalAdd";
-import { priceFormat } from "../../App";
+import Button from "./Button";
+
 
 function FormProduct(props) {
 
-     // Select product by id
-  const { id } = useParams();
-  const dispatch = useDispatch();
+    // Select product by id
+    const { id } = useParams();
+    const dispatch = useDispatch();
 
-  // Find product by id
-  const product = Products.find((product) => product.id === id);
+    // Find product by id
+    const product = Products.find((product) => product.id === id);
 
-  // Product information
-  const { category, name, price, image } = product;
-  const [modalShow, setModalShow] = React.useState(false);
-      // Add product
-  const addItem = () => {
-    dispatch(
-      cartActions.addItem({
-        id,
-        name,
-        price,
-        image,
-      })
-    );
-    setModalShow(true)
-  };
-  
+    // Product information
+    const {name, price, image } = product;
+
+    // State for modal display
+    const [modalShow, setModalShow] = React.useState(false);
+    
+    // Add product to cart
+    const addItem = () => {
+        dispatch(
+            cartActions.addItem({
+                id,
+                name,
+                price,
+                image,
+            })
+        );
+        //Show modal
+        setModalShow(true)
+    };
+
 
 
     return (
         <>
             <Formik
+                // form initial values
                 initialValues={{
-                    nombre:'',
-                    correo:''
+                    nombre: '',
+                    correo: ''
                 }}
-                onSubmit={(valores)=>{
+                // Values to send in form
+                onSubmit={(valores) => {
                     // console.log(valores)
                     // console.log("Formulario enviado")
                 }}
                 className={`form-contain ${(props.formClass)}`}
             >
-                {({handleSubmit, values, handleChange, handleBlur}) => (
+                {({ handleSubmit, values, handleChange, handleBlur }) => (
                     <form onSubmit={handleSubmit} className="form-product">
                         {/* <div className="selectors">
                         <div className="form-group">
@@ -58,7 +68,7 @@ function FormProduct(props) {
                                 type="text"
                                 id="name"
                                 name="name"
-                                placeholder="Brayan mi amor"
+                                placeholder="nombre"
                                 value={values.nombre}
                                 onChange={handleChange}
                                 onBlur={handleBlur}
@@ -70,7 +80,7 @@ function FormProduct(props) {
                                 type="text" 
                                 id="email" 
                                 name="email" 
-                                placeholder="Brayan te amo"
+                                placeholder="email"
                                 value={values.correo}
                                 onChange={handleChange}
                                 onBlur={handleBlur}
@@ -82,19 +92,19 @@ function FormProduct(props) {
                         </div>
                         <div className="form-group">
                             <label htmlFor="dates">Fecha de entrega</label>
-                            <input type="date" name="dates" id="dates" min=""/>
+                            <input type="date" name="dates" id="dates" min="" />
                         </div>
                         <p>*Ten presente que debe realizarse el pedido al menos con un día (24h) de anticipación</p>
-                        {/* <button type="submit" className="button button_form">Enviar</button> */}
-                        <Button text="Agregar" classe="button_form" funtion={addItem}/>
+                        <Button text="Agregar" classe="button_form" funtion={addItem} />
+                        {/* modal component */}
                         <ModalAdd
                             name={name}
-                            price={priceFormat.format(price)}
+                            price={formatPrice.format(price)}
                             image={image}
                             show={modalShow}
                             onHide={() => setModalShow(false)}
                         />
-                        
+
                     </form>
                 )}
             </Formik>

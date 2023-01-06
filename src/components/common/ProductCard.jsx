@@ -1,13 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { RiSearchEyeLine } from 'react-icons/ri';
-import {FaShopify} from 'react-icons/fa';
 
+// import functions
 import { cartActions } from "../../store/shoppingCart/cartSlice";
-import { priceFormat } from "../../App";
+import { formatPrice } from "../../App";
 
+// import components
 import ModalAdd from './ModalAdd'
+import Button from "./Button";
+
+// import icons from react-icons
+import { RiSearchEyeLine } from 'react-icons/ri';
 
 const ProductCard = (props) => {
   // Props with the product information
@@ -16,6 +20,7 @@ const ProductCard = (props) => {
   // Function to add products to cart
   const dispatch = useDispatch();
 
+  // Function add items to cart
   const addToCart = () => {
     dispatch(
       cartActions.addItem({
@@ -25,11 +30,11 @@ const ProductCard = (props) => {
         price,
       })
     );
+    // show modal
     setModalShow(true)
   };
 
-  // console.log({name})
-
+  // Variable and function to change modal state
   const [modalShow, setModalShow] = React.useState(false);
 
   return (
@@ -41,23 +46,24 @@ const ProductCard = (props) => {
         </div>
       </div></Link>
       <h2>{name}</h2>
-      <p>${priceFormat.format(price)} COP</p>
-      <button className="button" onClick={addToCart}>
-            <span class="top-key"></span>
-            <span class="text"><FaShopify className='icon'/> Agregar </span>
-            <span class="bottom-key-1"></span>
-            <span class="bottom-key-2"></span>  
-      </button>
+      <p>${formatPrice.format(price)} COP</p>
+
+      <Button text="Agregar" classe="button" funtion={addToCart} />
+        {/* <button className="button" onClick={addToCart}>
+              <span class="top-key"></span>
+              <span class="text"><FaShopify className='icon'/> Agregar </span>
+              <span class="bottom-key-1"></span>
+              <span class="bottom-key-2"></span>  
+        </button> */}
 
       <ModalAdd
         name={name}
-        price={priceFormat.format(price)}
+        price={formatPrice.format(price)}
         image={image}
         show={modalShow}
         onHide={() => setModalShow(false)}
       />
 
-      {/* <Button text="Agregar" classe="button_product" onClick={addToCart} /> */}
     </div>
   );
 };

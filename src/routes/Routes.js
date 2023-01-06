@@ -6,8 +6,12 @@ import AllProducts from "../pages/Products";
 import ProductDetails from "../pages/ProductDetail";
 import Cart from "../pages/Cart";
 
-const Routers = () => {
+import { ScrollToTop } from "../components/common/ScrollToTop";
+
+const AllRoutes = () => {
   return (
+    <>
+    <ScrollToTop/>
     <Routes>
       <Route path="/" element={<Navigate to="/home"/>} />
       <Route path="/home" element={<Home />} />
@@ -15,7 +19,8 @@ const Routers = () => {
       <Route path="/products/:id" element={<ProductDetails />} />
       <Route path="/cart" element={<Cart />} />
     </Routes>
+    </>
   );
 };
 
-export default Routers;
+export default AllRoutes;

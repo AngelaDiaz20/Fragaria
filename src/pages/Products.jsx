@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from "react"
 import ReactPaginate from "react-paginate";
 
+//import components
 import Header from "../components/layouts/Header";
 import Footer from "../components/layouts/Footer";
 import Products from "../store/data/products"
 import ProductCard from "../components/common/ProductCard"
 
+// import icons from react-icons
 import { FaSearch } from 'react-icons/fa'
 import { RxDoubleArrowRight, RxDoubleArrowLeft } from 'react-icons/rx'
 
+//import images
 import All from '../assets/img/products/combos/combo_01.jpg'
 import Chocolate from '../assets/img/products/Fresas_chocolates/fresas_01.jpg'
 import Torta from '../assets/img/products/tortas/torta_02.jpg'
@@ -56,52 +59,46 @@ const Product = () => {
   // Filter all products
   useEffect(() => {
     if (category === "ALL") {
-      // Filter all products
       setAllProducts(Products);
     }
 
+    // Filter products by category 
     if (category === "Chocolates") {
-      // Filter products by category
       const filteredProducts = Products.filter(
         (item) => item.category === "Chocolates"
       );
-
       setAllProducts(filteredProducts);
     }
 
+    // Filter products by category
     if (category === "Desayunos") {
-      // Filter products by category
       const filteredProducts = Products.filter(
         (item) => item.category === "Desayunos"
       );
-
       setAllProducts(filteredProducts);
     }
 
+    // Filter products by category
     if (category === "Tortas") {
-      // Filter products by category
       const filteredProducts = Products.filter(
         (item) => item.category === "Tortas"
       );
-
       setAllProducts(filteredProducts);
     }
 
+    // Filter products by category
     if (category === "Mugs-agendas") {
-      // Filter products by category
       const filteredProducts = Products.filter(
         (item) => item.category === "Mugs-agendas"
       );
-
       setAllProducts(filteredProducts);
     }
 
+    // Filter products by category
     if (category === "Combos") {
-      // Filter products by category
       const filteredProducts = Products.filter(
         (item) => item.category === "Combos"
       );
-
       setAllProducts(filteredProducts);
     }
   }, [category]);
@@ -118,6 +115,7 @@ const Product = () => {
 
               <h1>Encuentra el detalle perfecto</h1>
 
+              {/* product finder */}
               <div className='search'>
                 <input
                   placeholder='Búsqueda de deseos'
@@ -129,6 +127,7 @@ const Product = () => {
               </div>
             </div>
 
+          {/* category filters */}
           <div className='categories'>
             <button
               className={`all__btn button_category ${
@@ -193,7 +192,7 @@ const Product = () => {
 
         </section> 
 
-
+        {/* Products cards */}
         <section className='products_cards'>
           {displayPage.map((item)  => (
             <ProductCard
@@ -204,6 +203,7 @@ const Product = () => {
         </section>
       </main>
 
+          {/* product pagination */}
           <div className="container_paginate">
             <ReactPaginate
               pageCount={pageCount}

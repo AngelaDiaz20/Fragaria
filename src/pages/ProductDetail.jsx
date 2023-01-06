@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 
 // Import data products
 import Products from "../store/data/products";
+import { formatPrice } from "../App";
 import { cartActions } from "../store/shoppingCart/cartSlice";
 
 // Import Components
@@ -12,8 +13,8 @@ import Header from "../components/layouts/Header";
 import Footer from "../components/layouts/Footer";
 import ProductCard from "../components/common/ProductCard";
 import FormProduct from "../components/common/FormProduct"
-// import { cartActions } from "../store/shoppingCart/cartSlice";
-import { priceFormat } from "../App";
+
+
 
 const ProductDetails = () => {
   // Select product by id
@@ -31,9 +32,6 @@ const ProductDetails = () => {
   //   (item) => category === item.category && item.bestSeller === true
   // );
 
-
-
-
   return (
     <>
       <Header/>
@@ -46,7 +44,7 @@ const ProductDetails = () => {
                     <div className="section_one">
                       <div>
                         <h1>{product.name}</h1>
-                        <h3>{priceFormat.format(product.price)}</h3>
+                        <h3>{formatPrice.format(product.price)}</h3>
                       </div>
                       <FormProduct/>
                     </div>

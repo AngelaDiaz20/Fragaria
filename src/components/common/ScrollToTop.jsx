@@ -1,6 +1,8 @@
-const { useEffect } = require("react")
-const { useLocation } = require("react-router-dom")
+import React, { useEffect } from "react"
+import { useLocation }  from "react-router-dom"
 
+
+// Scroll restoation
 function ScrollToTop() {
     const { pathname } = useLocation()
     

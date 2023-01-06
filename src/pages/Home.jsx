@@ -1,30 +1,35 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Store from '../assets/img/store.png'
+// import components
+import Header from "../components/layouts/Header"
+import Footer from "../components/layouts/Footer"
+import Button from '../components/common/Button'
 
+// import images
+import Store from '../assets/img/store.png'
 import Product1 from '../assets/img/products/product_1.jpg'
 import Product2 from '../assets/img/products/product_2.jpg'
 import Product3 from '../assets/img/products/product_3.jpg'
 import Product4 from '../assets/img/products/product_4.jpg'
 import Banner from '../assets/img/banner.png'
 
-import Header from "../components/layouts/Header"
-import Footer from "../components/layouts/Footer"
-import Button from '../components/common/Button'
+
 
 const Home = () => {
- 
   return (
     <>
       <Header/>
       <main>
+        {/* Banner section */}
         <div className='banner_container'>
           <img src={Banner} alt="Banner" className='banner' />
           <div className="bg-color">
             <Link to='/products'><Button text="Ir a la tienda" classe="button_banner" /></Link>
           </div>
         </div>
+
+        {/* summary section */}
         <section className='summary'>
           <img src={Store} alt="Imagen de tienda" />
           <div className='description'>
@@ -36,6 +41,7 @@ const Home = () => {
               Assumenda quia eveniet facere corrupti alias, neque animi ut aliquid qui odit eaque non voluptates facilis illum nulla, accusamus harum, totam blanditiis quas dolore. </p></div>
         </section>
 
+        {/* products catalogue section */}
         <section className='products_catalogue'>
           <h1 className='title-po'>Cónoce nuestros productos</h1>
           <article>
@@ -59,7 +65,7 @@ const Home = () => {
             
         </section>
       </main>
-      <Footer/>
+      <Footer classFooter="fill-black"/>
     </>
   );
 };

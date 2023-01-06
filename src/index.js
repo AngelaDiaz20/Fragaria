@@ -6,9 +6,10 @@ import { Provider } from "react-redux";
 
 import "bootstrap/dist/css/bootstrap.css";
 
+// Import styles
 import "./scss/styles.scss"
 
-
+// import components
 import App from "./App";
 import store from "./store/store";
 

@@ -2,7 +2,7 @@ import React from "react";
 
 import Header from "./Header";
 import Footer from "./Footer";
-import Routes from "../../routes/Routes";
+import AllRoutes from "../../routes/Routes";
 
 
 const Layout = () => {
@@ -12,7 +12,7 @@ const Layout = () => {
       <Header />
 
       <div>
-        <Routes />
+        <AllRoutes />
       </div>
 
       <Footer />

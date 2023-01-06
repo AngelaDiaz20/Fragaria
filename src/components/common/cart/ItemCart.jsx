@@ -1,9 +1,11 @@
 import React from 'react'
 import { useDispatch } from "react-redux"
 
+//import functions
 import { cartActions } from '../../../store/shoppingCart/cartSlice'
-import { priceFormat } from '../../../App'
+import { formatPrice } from '../../../App'
 
+//import icons from react-icons
 import {HiMinus, HiPlus, HiTrash} from 'react-icons/hi'
 
 export const ItemCart = (props) => {
@@ -14,6 +16,7 @@ export const ItemCart = (props) => {
     // Dispatch to remove a product
     const dispatch = useDispatch();
 
+    // Add items to cart
     const incrementItem = () => {
         dispatch(
             cartActions.addItem({
@@ -25,7 +28,7 @@ export const ItemCart = (props) => {
         );
     };
 
-    // Remove products to cart
+    // Decrease cart items by one unit
     const decreaseItem = () => {
         dispatch(cartActions.removeItem(id));
     };
@@ -42,24 +45,23 @@ export const ItemCart = (props) => {
             </div>
             <div className='description'>
                 <h2>{name}</h2>
-                <p>$ {priceFormat.format(price)} COP</p>
+                <p>$ {formatPrice.format(price)} COP</p>
             </div>
             <div className='buttons_container'>
-
+                {/* button to remove product */}
                 <HiTrash onClick={deleteItem} className='icon_trash'/>
 
                 <div className='buttons_quantity'>
+                    {/* button to increase product */}
                     <span className="btn_increase" onClick={decreaseItem}>
                         <HiMinus className='icon'/>
                     </span>
-
+                    {/* current quantity of products */}
                     <span className="quantity">{quantity}</span>
-
+                    {/* button to decrease product */}
                     <span className="btn_decrease" onClick={incrementItem}>
                         <HiPlus className='icon'/>
-                    </span>
-
-                    
+                    </span>               
                 </div>
             </div>
         </article>

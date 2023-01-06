@@ -1,3 +1,6 @@
+import React from 'react';
+
+//import icons from react-icons
 import {FaShopify} from 'react-icons/fa'
 
 function Button(props) {

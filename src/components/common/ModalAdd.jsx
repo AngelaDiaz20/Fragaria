@@ -1,13 +1,15 @@
-
-import { Modal} from 'react-bootstrap';
-import {BsCartCheckFill} from 'react-icons/bs'
+import React from 'react';
 import {Link} from 'react-router-dom'
 
+// import components
+import { Modal} from 'react-bootstrap';
 import Button from './Button'
 
+//import icons from react-icons
+import {BsCartCheckFill} from 'react-icons/bs'
 
 function ModalAdd(props) {
- 
+
     return (
         <Modal
             {...props}
@@ -28,12 +30,9 @@ function ModalAdd(props) {
                     <p> <strong>Precio:</strong> ${props.price} COP</p> 
                     <p> <strong>Cantidad:</strong> 1</p>
                 </div>
-
-                {/* <ButtonCart item={props.id}/> */}
             </Modal.Body>
 
             <Modal.Footer className='modal_footer'> 
-                {/* <button onClick={props.onHide}>Cerrar</button> */}
                 <button onClick={props.onHide} className="button_modal">Seguir comprando</button>
                 <Link to="/cart"><Button text="Ver carrito"/></Link>
             </Modal.Footer>
