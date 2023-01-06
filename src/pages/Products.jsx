@@ -106,41 +106,6 @@ const Product = () => {
     }
   }, [category]);
 
-  // let cat = document.querySelector('.btnn');
-
-  // let hideInformation = document.querySelectorAll('.button_category:not(.all__btn)');
-
-  // cat.addEventListener('click', toggleText);
-
-  // function toggleText (e){
-  //   e.preventDefault();
-    
-  //   hideInformation.classList.toggle('show');
-
-
-    // category_all.forEach ((item) =>
-    //     console.log(item)
-    //     // item.classList.add("show")
-    // );
-    
-  // }
-
-  // function show (){
-  //   const category_show = document.querySelectorAll('.button_category')
-  //   for (var i = 0; i < category_show.length; i++) {
-  //     console.log(category_show[i])
-  //     category_show[i].classList.add("show");
-  //   }
-    
-  //   // category_all.forEach ((item) =>
-  //   //     console.log(item)
-  //   //     // item.classList.add("show")
-  //   // );
-    
-  // }
-
-  
-
   return (
     <>
     <Header/>

@@ -28,7 +28,7 @@ const ProductCard = (props) => {
     setModalShow(true)
   };
 
-  console.log({name})
+  // console.log({name})
 
   const [modalShow, setModalShow] = React.useState(false);
 

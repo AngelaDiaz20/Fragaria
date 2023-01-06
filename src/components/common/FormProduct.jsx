@@ -44,8 +44,8 @@ function FormProduct(props) {
                     correo:''
                 }}
                 onSubmit={(valores)=>{
-                    console.log(valores)
-                    console.log("Formulario enviado")
+                    // console.log(valores)
+                    // console.log("Formulario enviado")
                 }}
                 className={`form-contain ${(props.formClass)}`}
             >

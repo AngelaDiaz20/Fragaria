@@ -1,8 +1,8 @@
 // Import components
-import Layout from "./components/layouts/Layout";
+// import Layout from "./components/layouts/Layout";
 import { Route, Routes, Navigate } from "react-router-dom";
 
-
+import { ScrollToTop } from "./components/common/ScrollToTop";
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
 import Product from "./pages/Products";
@@ -12,6 +12,7 @@ import ProductDetail from "./pages/ProductDetail";
 function App() {
   return (
     <>
+    <ScrollToTop/>
     <Routes>
       <Route path="/" element={<Navigate to="/home"/>} />
       <Route path="/home" element={<Home />} />
