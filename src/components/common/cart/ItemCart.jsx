@@ -39,9 +39,9 @@ export const ItemCart = (props) => {
     };
 
     return (
-        <article className='cart_item'>
+        <article className='cart_item' title='cartItem'>
             <div className='container_image'>
-                <img src={image} alt={name} />
+                <img src={image} alt={name}/>
             </div>
             <div className='description'>
                 <h2>{name}</h2>
