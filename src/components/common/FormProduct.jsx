@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
 
 // import functions
-import { cartActions } from "../../store/shoppingCart/cartSlice";
+import { cartActions } from "../../store/shoppingCart/countSlice";
 import { formatPrice } from "../../App";
 
 // import components
@@ -29,9 +29,9 @@ function FormProduct(props) {
     const [modalShow, setModalShow] = React.useState(false);
     
     // Add product to cart
-    const addItem = () => {
+    const addToCart = () => {
         dispatch(
-            cartActions.addItem({
+            cartActions.addToCart({
                 id,
                 name,
                 price,
@@ -95,7 +95,7 @@ function FormProduct(props) {
                             <input type="date" name="dates" id="dates" min="" />
                         </div>
                         <p>*Ten presente que debe realizarse el pedido al menos con un día (24h) de anticipación</p>
-                        <Button text="Agregar" classe="button_form" funtion={addItem} />
+                        <Button text="Agregar" classe="button_form" funtion={addToCart} />
                         {/* modal component */}
                         <ModalAdd
                             name={name}

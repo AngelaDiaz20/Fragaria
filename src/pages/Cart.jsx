@@ -69,7 +69,7 @@ const Cart = () => {
               {cartItems.map((item) => (
                 <ItemCart item={item} key={item.id} />
               ))}
-            </div>
+          </div>
 
             {/* Purchase Summary Product Table for desktop*/}
             <div className="table_cart">
@@ -136,7 +136,6 @@ const Cart = () => {
               </div>
             </div>
               
-
           </div>
 
         )}

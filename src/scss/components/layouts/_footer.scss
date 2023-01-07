@@ -1,6 +1,6 @@
 footer{
     background: $purple-dark;
-    padding: 40px 40px 20px;
+    padding: 40px 10px 20px;
     position: relative;
     color: white;
     font-family: $title-font;
@@ -8,9 +8,11 @@ footer{
     bottom: 0;
     width: 100%;
     margin-top: 0px;
+    text-align: center;
 
     img{
         width: 100px;
+        margin-bottom: 10px;
     }
 
     .made{
@@ -26,7 +28,7 @@ footer{
     }
 
     .custom-shape-divider-top-1671653195 {
-        position: absolute;
+        position: absolute; 
         top: 0;
         left: 0;
         width: 100%;
@@ -44,10 +46,44 @@ footer{
     .custom-shape-divider-top-1671653195 .shape-fill {
         fill: white;
     }
+
+    .container_information{
+        display: grid;
+        grid-template-columns: auto auto;
+
+        .container_social-media{
+            text-align: center;
+        }
+        p{
+            padding: 0;
+            margin: 0;
+        }
+        
+    }
 }
 
 
 .fill-black .custom-shape-divider-top-1671653195 .shape-fill{
     fill: $black;
     margin: 0;
+}
+
+@media screen and (min-width:768px) {
+    footer{
+        display: grid;
+        padding: 40px 40px 20px;
+        grid-template-columns: 50% auto;
+        align-items: center;
+
+        img{
+            width: 100px;
+            margin-left: 30px;
+        }
+
+        .made{
+            grid-column: span 2;
+            width: 100%;
+        }
+    }
+    
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import { useDispatch } from "react-redux"
 
 //import functions
-import { cartActions } from '../../../store/shoppingCart/cartSlice'
+import { cartActions } from '../../../store/shoppingCart/countSlice'
 import { formatPrice } from '../../../App'
 
 //import icons from react-icons
@@ -19,7 +19,7 @@ export const ItemCart = (props) => {
     // Add items to cart
     const incrementItem = () => {
         dispatch(
-            cartActions.addItem({
+            cartActions.addToCart({
                 id, 
                 name,
                 price,

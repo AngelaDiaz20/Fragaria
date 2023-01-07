@@ -1,7 +1,10 @@
 import React from 'react'
 import {useDispatch} from "react-redux";
 
-import {cartActions} from "../../../store/shoppingCart/cartSlice"
+import {cartActions} from "../../../store/shoppingCart/countSlice"
+
+// import icons from react-icons
+import {HiMinus, HiPlus} from 'react-icons/hi'
 
 function ButtonCart(props) {
 
@@ -14,7 +17,7 @@ function ButtonCart(props) {
     // Add items to cart
     const incrementItem = () => {
         dispatch(
-            cartActions.addItem({
+            cartActions.addToCart({
                 id,
                 name,
                 price,
@@ -30,19 +33,17 @@ function ButtonCart(props) {
 
     return (
         <>
-            <div className="d-flex align-items-center justify-content-between increase__decrease-btn">
+            <div className='buttons_quantity'>
                 {/* button to increase product */}
-                <span className="increase__btn" onClick={incrementItem}>
-                    <i className="ri-add-fill"></i>
+                <span className="btn_increase" onClick={decreaseItem}>
+                    <HiMinus className='icon'/>
                 </span>
-
                 {/* current quantity of products */}
                 <span className="quantity">{quantity}</span>
-
                 {/* button to decrease product */}
-                <span className="decrease__btn" onClick={decreaseItem}>
-                    <i className="ri-subtract-fill"></i>
-                </span>
+                <span className="btn_decrease" onClick={incrementItem}>
+                    <HiPlus className='icon'/>
+                </span>               
             </div>
         </>
     )

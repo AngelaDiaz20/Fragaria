@@ -25,11 +25,11 @@ function ModalAdd(props) {
             </Modal.Header>
             <Modal.Body className='modal_body'>
                 <div><img src={props.image} alt={props.name}/></div>
-                <div>
+                <article title='modal description' >
                     <h1>{props.name}</h1>
                     <p> <strong>Precio:</strong> ${props.price} COP</p> 
                     <p> <strong>Cantidad:</strong> 1</p>
-                </div>
+                </article>
             </Modal.Body>
 
             <Modal.Footer className='modal_footer'> 

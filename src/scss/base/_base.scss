@@ -21,6 +21,9 @@ body{
 a{
     text-decoration: none;
     color: white;
+    &:hover{
+        color: $purple-light;
+    }
 }
 
 h1{

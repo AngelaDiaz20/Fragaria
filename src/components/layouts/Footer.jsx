@@ -1,6 +1,6 @@
 import React from 'react';
 
-// import image
+// import image 
 import Brand from '../../assets/img/fragaria_brand_footer.svg'
 
 //import icons from react-icons
@@ -17,9 +17,18 @@ function Footer(props) {
                     <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" className="shape-fill"></path>
                 </svg>
             </div>
-            <div className='social_media'>
-                <FaFacebookSquare className='icon_media'/>
-                <FaInstagram className='icon_media'/>
+            <div className='container_information'>
+            <div className='basic_information'>
+                <p><strong>Teléfono: </strong>315-362-1841</p>
+                <p><strong>Dirección: </strong>Calle 7# 4-22</p>
+            </div>
+            <div className='container_social-media'>
+                <p>Síguenos</p>
+                <div className='social_media'>
+                    <a href="https://www.facebook.com/profile.php?id=100037758498632&mibextid=ZbWKwL" target="_blank"><FaFacebookSquare className='icon_media'/></a>
+                    <a href="https://instagram.com/fragaria_gifts?igshid=NTdlMDg3MTY=" target="_blank"><FaInstagram className='icon_media'/></a>
+                </div>
+            </div>
             </div>
             <div className='made'>
                 <p>Made By Angela Díaz</p>

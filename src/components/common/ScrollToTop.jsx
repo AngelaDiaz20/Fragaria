@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 import { useLocation }  from "react-router-dom"
 
 
-// Scroll restoation
+// Scroll restoration
 function ScrollToTop() {
     const { pathname } = useLocation()
     

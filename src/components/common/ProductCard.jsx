@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 
 // import functions
-import { cartActions } from "../../store/shoppingCart/cartSlice";
+import { cartActions } from "../../store/shoppingCart/countSlice";
 import { formatPrice } from "../../App";
 
 // import components
@@ -23,7 +23,7 @@ const ProductCard = (props) => {
   // Function add items to cart
   const addToCart = () => {
     dispatch(
-      cartActions.addItem({
+      cartActions.addToCart({
         id,
         name,
         image,
@@ -49,12 +49,6 @@ const ProductCard = (props) => {
       <p>${formatPrice.format(price)} COP</p>
 
       <Button text="Agregar" classe="button" funtion={addToCart} />
-        {/* <button className="button" onClick={addToCart}>
-              <span class="top-key"></span>
-              <span class="text"><FaShopify className='icon'/> Agregar </span>
-              <span class="bottom-key-1"></span>
-              <span class="bottom-key-2"></span>  
-        </button> */}
 
       <ModalAdd
         name={name}

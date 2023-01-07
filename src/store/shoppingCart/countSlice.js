@@ -9,13 +9,13 @@ const initialState = {
 };
 
 // Reducer for createSlice
-const cartSlice = createSlice({
+const countSlice = createSlice({
   name: "cart",
   initialState: initialState,
 
   reducers: {
-    // Add Item
-    addItem(state, action) {
+    // Add item to cart
+    addToCart(state, action) {
       const newItem = action.payload;
       const existingItem = state.cartItems.find(
         (item) => item.id === newItem.id
@@ -23,7 +23,6 @@ const cartSlice = createSlice({
       state.totalQuantity++;
 
       if (!existingItem) {
-        // Redux toolkit clone the array behind the scene
         state.cartItems.push({
           id: newItem.id,
           name: newItem.name,
@@ -85,5 +84,5 @@ const cartSlice = createSlice({
   },
 });
 
-export const cartActions = cartSlice.actions;
-export default cartSlice;
+export const cartActions = countSlice.actions;
+export default countSlice;

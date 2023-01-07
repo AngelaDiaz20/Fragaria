@@ -6,12 +6,10 @@ import { useDispatch } from "react-redux";
 // Import data products
 import Products from "../store/data/products";
 import { formatPrice } from "../App";
-import { cartActions } from "../store/shoppingCart/cartSlice";
 
 // Import Components
 import Header from "../components/layouts/Header";
 import Footer from "../components/layouts/Footer";
-import ProductCard from "../components/common/ProductCard";
 import FormProduct from "../components/common/FormProduct"
 
 
