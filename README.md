@@ -16,5 +16,8 @@ Este proyecto fue desarrollado para la marca **'Fragaria'**, el cual ofrece una 
 
 ------------
 
+- [Link de despliegue](http://fragaria.vercel.app "Link de despliegue")
+- Trello: https://trello.com/b/1MapQqUY/fragaria
 - Wireframes: https://www.figma.com/file/vMZWWNvbWWGr4ZobAym3Wl/Fragaria?node-id=30%3A48&t=0y2seVk2kcPGVE3t-1
 - Mockups: https://www.figma.com/file/vMZWWNvbWWGr4ZobAym3Wl/Fragaria?node-id=310%3A3726&t=0y2seVk2kcPGVE3t-1
+- Documentación: https://iris-tilapia-084.notion.site/Fragaria-5d74d82cbe5549118c8c8e2ba26ccce9
